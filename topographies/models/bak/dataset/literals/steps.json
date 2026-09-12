@@ -1,0 +1,58 @@
+[
+ {
+  "slug": "frame.01",
+  "traits": ["LABELED", "INSTRUCTED", "PREPARED"],
+  "trait": {
+   "LABELED": { "name": "Prepare to join" },
+   "INSTRUCTED": { "text": ["Prepare to join: Bottom plate [1], Sandwich plate [3], Arms [6]."], "warn": [], "images": [] },
+   "PREPARED": { "components": { "bottom_plate": 1, "sandwich_plate": 1, "arm": 4, "bolt_m3_18": 4, "bolt_m3_16": 6, "standoff": 4 }, "tools": ["tool.hex_2_0"] }
+  },
+  "symbols": [{ "slug": "step" }, { "slug": "section.frame" }]
+ },
+ {
+  "slug": "frame.02",
+  "traits": ["LABELED", "INSTRUCTED"],
+  "trait": {
+   "LABELED": { "name": "Identify the top side" },
+   "INSTRUCTED": { "text": ["Identify top side of the Bottom plate [1].", "The top side is where integrated nuts are inserted into the frame and sticking out of it."], "warn": [], "images": ["manual/8e8e29009e7f.webp"] }
+  },
+  "symbols": [{ "slug": "step" }, { "slug": "section.frame" }, { "slug": "warn.orientation" }]
+ },
+ {
+  "slug": "frame.03",
+  "traits": ["LABELED", "INSTRUCTED", "COMPOSED"],
+  "trait": {
+   "LABELED": { "name": "Place the bottom plate" },
+   "INSTRUCTED": { "text": ["Place the Bottom plate [1] in front of you, bottom side up.", "Make sure that nuts are not sticking out to the top."], "warn": [], "images": ["manual/2dab0a680257.webp"] },
+   "COMPOSED": { "nodes": [{ "name": "bottom_plate", "component": "bottom_plate", "translation": [0.00531, 0.00972, 0.00069] }] }
+  },
+  "symbols": [{ "slug": "step" }, { "slug": "section.frame" }, { "slug": "warn.orientation" }],
+  "uses": [{ "slug": "bottom_plate" }]
+ },
+ {
+  "slug": "frame.04",
+  "traits": ["LABELED", "INSTRUCTED", "COMPOSED"],
+  "trait": {
+   "LABELED": { "name": "Place one arm" },
+   "INSTRUCTED": { "text": ["Place one arm at the appropriate position on top."], "warn": [], "images": ["manual/cf5a470bc835.webp"] },
+   "COMPOSED": { "nodes": [{ "name": "arm.0", "component": "arm", "translation": [-0.0887, 0.00214, 0.08234], "rotation": [0.31733, 0, -0.94831, 0] }] }
+  },
+  "symbols": [{ "slug": "step" }, { "slug": "section.frame" }],
+  "uses": [{ "slug": "arm" }]
+ },
+ {
+  "slug": "frame.05",
+  "traits": ["LABELED", "INSTRUCTED", "COMPOSED", "JOINED"],
+  "trait": {
+   "LABELED": { "name": "Cover and thread the 16 mm bolt" },
+   "INSTRUCTED": { "text": ["Cover it by the bottom plate and thread the 16mm bolt."], "warn": ["Don't tighten it yet! Leave it loose."], "images": ["manual/20d885202ff6.webp", "manual/dff5a5f0dab5.webp"] },
+   "COMPOSED": { "nodes": [
+    { "name": "sandwich_plate", "component": "sandwich_plate", "translation": [0, 0, 0] },
+    { "name": "bolt_m3_16.0", "component": "bolt_m3_16", "translation": [0, 0, 0] }
+   ] },
+   "JOINED": { "joints": [{ "fastener": "bolt_m3_16.0", "joins": ["bottom_plate", "arm.0", "sandwich_plate"], "kind": "joint.bolted", "torque": "loose" }] }
+  },
+  "symbols": [{ "slug": "step" }, { "slug": "section.frame" }, { "slug": "warn.loose" }],
+  "uses": [{ "slug": "sandwich_plate" }, { "slug": "bolt_m3_16" }]
+ }
+]
