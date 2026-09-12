@@ -1,0 +1,14 @@
+[
+ {
+  "slug": "frame",
+  "traits": ["LABELED", "COMPOSED", "JOINED", "SEQUENCED"],
+  "trait": {
+   "LABELED": { "name": "Frame", "description": "10\" Partizan Edition PT10 V3, assembled — manual p3–13" },
+   "COMPOSED": { "nodes": [] },
+   "JOINED": { "joints": [] },
+   "SEQUENCED": { "steps": ["frame.01", "frame.02", "frame.03", "frame.04", "frame.05"] }
+  },
+  "symbols": [{ "slug": "assembly" }],
+  "uses": [{ "slug": "frame.01" }, { "slug": "frame.02" }, { "slug": "frame.03" }, { "slug": "frame.04" }, { "slug": "frame.05" }]
+ }
+]

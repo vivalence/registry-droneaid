@@ -1,0 +1,1558 @@
+[
+ {
+  "slug": "bottom_plate",
+  "traits": [
+   "LABELED",
+   "SOURCED",
+   "MODELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Bottom plate"
+   },
+   "SOURCED": {
+    "file": "DRONEAID_model_latest.blend",
+    "object": "Frame_Bottom",
+    "scale": 0.05
+   },
+   "MODELED": {
+    "file": "parts/bottom_plate.glb",
+    "tris": 2160,
+    "bbox": [
+     0.28225,
+     0.002,
+     0.09699
+    ]
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.carbon"
+   },
+   {
+    "slug": "source.3d_scan"
+   },
+   {
+    "slug": "family.plate"
+   }
+  ]
+ },
+ {
+  "slug": "top_plate",
+  "traits": [
+   "LABELED",
+   "SOURCED",
+   "MODELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Top plate"
+   },
+   "SOURCED": {
+    "file": "DRONEAID_model_latest.blend",
+    "object": "Frame_Top",
+    "scale": 0.05
+   },
+   "MODELED": {
+    "file": "parts/top_plate.glb",
+    "tris": 1584,
+    "bbox": [
+     0.28225,
+     0.002,
+     0.04483
+    ]
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.carbon"
+   },
+   {
+    "slug": "source.3d_scan"
+   },
+   {
+    "slug": "family.plate"
+   }
+  ]
+ },
+ {
+  "slug": "sandwich_plate",
+  "traits": [
+   "LABELED",
+   "SOURCED",
+   "MODELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Arm sandwich / mid plate"
+   },
+   "SOURCED": {
+    "file": "DRONEAID_model_latest.blend",
+    "object": "Frame_Star",
+    "scale": 0.05
+   },
+   "MODELED": {
+    "file": "parts/sandwich_plate.glb",
+    "tris": 624,
+    "bbox": [
+     0.12195,
+     0.002,
+     0.0969
+    ]
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.carbon"
+   },
+   {
+    "slug": "source.3d_scan"
+   },
+   {
+    "slug": "family.plate"
+   }
+  ]
+ },
+ {
+  "slug": "arm",
+  "traits": [
+   "LABELED",
+   "SOURCED",
+   "MODELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Motor arm"
+   },
+   "SOURCED": {
+    "file": "DRONEAID_model_latest.blend",
+    "object": "Motor_Arm3",
+    "scale": 0.05
+   },
+   "MODELED": {
+    "file": "parts/arm.glb",
+    "tris": 80,
+    "bbox": [
+     0.04134,
+     0.0075,
+     0.20863
+    ]
+   },
+   "COUNTED": {
+    "qty": 4
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.carbon"
+   },
+   {
+    "slug": "source.3d_scan"
+   },
+   {
+    "slug": "family.arm"
+   }
+  ]
+ },
+ {
+  "slug": "battery_pad",
+  "traits": [
+   "LABELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Battery pad"
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.soft_goods"
+   },
+   {
+    "slug": "source.parametric"
+   },
+   {
+    "slug": "family.pad"
+   }
+  ]
+ },
+ {
+  "slug": "battery_strap",
+  "traits": [
+   "LABELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Battery strap"
+   },
+   "COUNTED": {
+    "qty": 2
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.soft_goods"
+   },
+   {
+    "slug": "source.procedural_spline"
+   },
+   {
+    "slug": "family.strap"
+   }
+  ]
+ },
+ {
+  "slug": "standoff",
+  "traits": [
+   "LABELED",
+   "PARAMETRIC",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Standoff",
+    "description": "M3"
+   },
+   "PARAMETRIC": {
+    "generator": "fastener.standoff",
+    "params": {
+     "thread": "M3",
+     "length": 27
+    }
+   },
+   "COUNTED": {
+    "qty": 8
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.fastener"
+   },
+   {
+    "slug": "source.parametric"
+   },
+   {
+    "slug": "family.standoff"
+   }
+  ]
+ },
+ {
+  "slug": "camera_mount",
+  "traits": [
+   "LABELED",
+   "SOURCED",
+   "MODELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Camera mount"
+   },
+   "SOURCED": {
+    "file": "DRONEAID_model_latest.blend",
+    "object": "CamHolder0",
+    "scale": 0.05
+   },
+   "MODELED": {
+    "file": "parts/camera_mount.glb",
+    "tris": 104,
+    "bbox": [
+     0.01733,
+     0.0274,
+     0.01178
+    ]
+   },
+   "COUNTED": {
+    "qty": 2
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.printed"
+   },
+   {
+    "slug": "source.print_stl"
+   },
+   {
+    "slug": "family.mount"
+   }
+  ]
+ },
+ {
+  "slug": "antenna_mount",
+  "traits": [
+   "LABELED",
+   "SOURCED",
+   "MODELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Antenna mount (rear)"
+   },
+   "SOURCED": {
+    "file": "DRONEAID_model_latest.blend",
+    "object": "AntennaFixture00",
+    "scale": 0.05
+   },
+   "MODELED": {
+    "file": "parts/antenna_mount.glb",
+    "tris": 756,
+    "bbox": [
+     0.01574,
+     0.01407,
+     0.01203
+    ]
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.printed"
+   },
+   {
+    "slug": "source.print_stl"
+   },
+   {
+    "slug": "family.mount"
+   }
+  ]
+ },
+ {
+  "slug": "rx_antenna_mount",
+  "traits": [
+   "LABELED",
+   "SOURCED",
+   "MODELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "RX antenna mount / tail"
+   },
+   "SOURCED": {
+    "file": "DRONEAID_model_latest.blend",
+    "object": "AntennaFixture02",
+    "scale": 0.05
+   },
+   "MODELED": {
+    "file": "parts/rx_antenna_mount.glb",
+    "tris": 92,
+    "bbox": [
+     0.01862,
+     0.01861,
+     0.00988
+    ]
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.printed"
+   },
+   {
+    "slug": "source.print_stl"
+   },
+   {
+    "slug": "family.mount"
+   }
+  ]
+ },
+ {
+  "slug": "bolt_helper",
+  "traits": [
+   "LABELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Bolt-holding jig"
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.printed"
+   },
+   {
+    "slug": "source.print_stl"
+   },
+   {
+    "slug": "family.jig"
+   }
+  ]
+ },
+ {
+  "slug": "bolt_m3_30",
+  "traits": [
+   "LABELED",
+   "PARAMETRIC",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Bolt, stack",
+    "description": "M3x30 round head"
+   },
+   "PARAMETRIC": {
+    "generator": "fastener.bolt",
+    "params": {
+     "thread": "M3",
+     "length": 30
+    }
+   },
+   "COUNTED": {
+    "qty": 4
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.fastener"
+   },
+   {
+    "slug": "source.parametric"
+   },
+   {
+    "slug": "family.bolt.m3"
+   }
+  ]
+ },
+ {
+  "slug": "bolt_m3_28",
+  "traits": [
+   "LABELED",
+   "PARAMETRIC",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Bolt, long (unused)",
+    "description": "M3x28"
+   },
+   "PARAMETRIC": {
+    "generator": "fastener.bolt",
+    "params": {
+     "thread": "M3",
+     "length": 28
+    }
+   },
+   "COUNTED": {
+    "qty": 4
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.fastener"
+   },
+   {
+    "slug": "source.parametric"
+   },
+   {
+    "slug": "family.bolt.m3"
+   }
+  ]
+ },
+ {
+  "slug": "bolt_m3_18",
+  "traits": [
+   "LABELED",
+   "PARAMETRIC",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Bolt, medium",
+    "description": "M3x18"
+   },
+   "PARAMETRIC": {
+    "generator": "fastener.bolt",
+    "params": {
+     "thread": "M3",
+     "length": 18
+    }
+   },
+   "COUNTED": {
+    "qty": 4
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.fastener"
+   },
+   {
+    "slug": "source.parametric"
+   },
+   {
+    "slug": "family.bolt.m3"
+   }
+  ]
+ },
+ {
+  "slug": "bolt_m3_16",
+  "traits": [
+   "LABELED",
+   "PARAMETRIC",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Bolt, short",
+    "description": "M3x16"
+   },
+   "PARAMETRIC": {
+    "generator": "fastener.bolt",
+    "params": {
+     "thread": "M3",
+     "length": 16
+    }
+   },
+   "COUNTED": {
+    "qty": 6
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.fastener"
+   },
+   {
+    "slug": "source.parametric"
+   },
+   {
+    "slug": "family.bolt.m3"
+   }
+  ]
+ },
+ {
+  "slug": "bolt_m3_12",
+  "traits": [
+   "LABELED",
+   "PARAMETRIC",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Bolt, RX antenna",
+    "description": "M3x12"
+   },
+   "PARAMETRIC": {
+    "generator": "fastener.bolt",
+    "params": {
+     "thread": "M3",
+     "length": 12
+    }
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.fastener"
+   },
+   {
+    "slug": "source.parametric"
+   },
+   {
+    "slug": "family.bolt.m3"
+   }
+  ]
+ },
+ {
+  "slug": "bolt_m3_10",
+  "traits": [
+   "LABELED",
+   "PARAMETRIC",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Bolt, motor mount",
+    "description": "M3x10"
+   },
+   "PARAMETRIC": {
+    "generator": "fastener.bolt",
+    "params": {
+     "thread": "M3",
+     "length": 10
+    }
+   },
+   "COUNTED": {
+    "qty": 16
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.fastener"
+   },
+   {
+    "slug": "source.parametric"
+   },
+   {
+    "slug": "family.bolt.m3"
+   }
+  ]
+ },
+ {
+  "slug": "bolt_m3_8",
+  "traits": [
+   "LABELED",
+   "PARAMETRIC",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Bolt, top plate & standoffs",
+    "description": "M3x8"
+   },
+   "PARAMETRIC": {
+    "generator": "fastener.bolt",
+    "params": {
+     "thread": "M3",
+     "length": 8
+    }
+   },
+   "COUNTED": {
+    "qty": 16
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.fastener"
+   },
+   {
+    "slug": "source.parametric"
+   },
+   {
+    "slug": "family.bolt.m3"
+   }
+  ]
+ },
+ {
+  "slug": "bolt_m2_4",
+  "traits": [
+   "LABELED",
+   "PARAMETRIC",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Bolt, camera",
+    "description": "M2x4"
+   },
+   "PARAMETRIC": {
+    "generator": "fastener.bolt",
+    "params": {
+     "thread": "M2",
+     "length": 4
+    }
+   },
+   "COUNTED": {
+    "qty": 2
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.fastener"
+   },
+   {
+    "slug": "source.parametric"
+   },
+   {
+    "slug": "family.bolt.m2"
+   }
+  ]
+ },
+ {
+  "slug": "locknut_m3",
+  "traits": [
+   "LABELED",
+   "PARAMETRIC",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Metal locknut",
+    "description": "M3 nylock"
+   },
+   "PARAMETRIC": {
+    "generator": "fastener.nut",
+    "params": {
+     "thread": "M3"
+    }
+   },
+   "COUNTED": {
+    "qty": 4
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.fastener"
+   },
+   {
+    "slug": "source.parametric"
+   },
+   {
+    "slug": "family.nut"
+   }
+  ]
+ },
+ {
+  "slug": "motor_nut",
+  "traits": [
+   "LABELED",
+   "PARAMETRIC",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Propeller nut",
+    "description": "M5 prop nut"
+   },
+   "PARAMETRIC": {
+    "generator": "fastener.nut",
+    "params": {
+     "thread": "M5"
+    }
+   },
+   "COUNTED": {
+    "qty": 4
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.fastener"
+   },
+   {
+    "slug": "source.parametric"
+   },
+   {
+    "slug": "family.nut"
+   }
+  ]
+ },
+ {
+  "slug": "motor",
+  "traits": [
+   "LABELED",
+   "SOURCED",
+   "MODELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Brushless motor"
+   },
+   "SOURCED": {
+    "file": "DRONEAID_model_latest.blend",
+    "object": "Motor0",
+    "scale": 0.05
+   },
+   "MODELED": {
+    "file": "parts/motor.glb",
+    "tris": 828,
+    "bbox": [
+     0.0349,
+     0.03624,
+     0.0349
+    ]
+   },
+   "COUNTED": {
+    "qty": 4
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.motor"
+   },
+   {
+    "slug": "source.vendor_cad"
+   },
+   {
+    "slug": "family.motor"
+   }
+  ]
+ },
+ {
+  "slug": "fc",
+  "traits": [
+   "LABELED",
+   "SOURCED",
+   "MODELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Flight controller"
+   },
+   "SOURCED": {
+    "file": "DRONEAID_model_latest.blend",
+    "object": "FlightController01",
+    "scale": 0.05
+   },
+   "MODELED": {
+    "file": "parts/fc.glb",
+    "tris": 92,
+    "bbox": [
+     0.0303,
+     0.00094,
+     0.0303
+    ]
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.electronics"
+   },
+   {
+    "slug": "source.vendor_cad"
+   },
+   {
+    "slug": "family.fc"
+   }
+  ]
+ },
+ {
+  "slug": "esc",
+  "traits": [
+   "LABELED",
+   "SOURCED",
+   "MODELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Electronic speed controller"
+   },
+   "SOURCED": {
+    "file": "DRONEAID_model_latest.blend",
+    "object": "FlightController00",
+    "scale": 0.05
+   },
+   "MODELED": {
+    "file": "parts/esc.glb",
+    "tris": 92,
+    "bbox": [
+     0.0303,
+     0.00094,
+     0.0303
+    ]
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.electronics"
+   },
+   {
+    "slug": "source.vendor_cad"
+   },
+   {
+    "slug": "family.esc"
+   }
+  ]
+ },
+ {
+  "slug": "grommet_silicone",
+  "traits": [
+   "LABELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Silicone grommet"
+   },
+   "COUNTED": {
+    "qty": 8
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.soft_goods"
+   },
+   {
+    "slug": "source.parametric"
+   },
+   {
+    "slug": "family.grommet"
+   }
+  ]
+ },
+ {
+  "slug": "cable_esc_fc",
+  "traits": [
+   "LABELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "8-pin cable, ESC to FC"
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.soft_goods"
+   },
+   {
+    "slug": "source.procedural_spline"
+   },
+   {
+    "slug": "family.cable"
+   }
+  ]
+ },
+ {
+  "slug": "connector_set",
+  "traits": [
+   "LABELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Connector set"
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.electronics"
+   },
+   {
+    "slug": "source.photo_model"
+   },
+   {
+    "slug": "family.connector"
+   }
+  ]
+ },
+ {
+  "slug": "vtx",
+  "traits": [
+   "LABELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Video transmitter"
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.electronics"
+   },
+   {
+    "slug": "source.vendor_cad"
+   },
+   {
+    "slug": "family.vtx"
+   }
+  ]
+ },
+ {
+  "slug": "vtx_pigtail",
+  "traits": [
+   "LABELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Antenna pigtail"
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.soft_goods"
+   },
+   {
+    "slug": "source.procedural_spline"
+   },
+   {
+    "slug": "family.antenna"
+   }
+  ]
+ },
+ {
+  "slug": "vtx_antenna",
+  "traits": [
+   "LABELED",
+   "SOURCED",
+   "MODELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "VTX antenna"
+   },
+   "SOURCED": {
+    "file": "DRONEAID_model_latest.blend",
+    "object": "Antenna.02",
+    "scale": 0.05
+   },
+   "MODELED": {
+    "file": "parts/vtx_antenna.glb",
+    "tris": 444,
+    "bbox": [
+     0.01157,
+     0.06718,
+     0.01157
+    ]
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.soft_goods"
+   },
+   {
+    "slug": "source.photo_model"
+   },
+   {
+    "slug": "family.antenna"
+   }
+  ]
+ },
+ {
+  "slug": "cable_vtx_fc",
+  "traits": [
+   "LABELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "VTX to FC cable"
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.soft_goods"
+   },
+   {
+    "slug": "source.procedural_spline"
+   },
+   {
+    "slug": "family.cable"
+   }
+  ]
+ },
+ {
+  "slug": "thermo_adhesive",
+  "traits": [
+   "LABELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Thermal adhesive pad"
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.soft_goods"
+   },
+   {
+    "slug": "source.parametric"
+   },
+   {
+    "slug": "family.pad"
+   }
+  ]
+ },
+ {
+  "slug": "rx",
+  "traits": [
+   "LABELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "ELRS receiver"
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.electronics"
+   },
+   {
+    "slug": "source.vendor_cad"
+   },
+   {
+    "slug": "family.rx"
+   }
+  ]
+ },
+ {
+  "slug": "rx_antenna",
+  "traits": [
+   "LABELED",
+   "SOURCED",
+   "MODELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "RX antenna"
+   },
+   "SOURCED": {
+    "file": "DRONEAID_model_latest.blend",
+    "object": "Antenna.00",
+    "scale": 0.05
+   },
+   "MODELED": {
+    "file": "parts/rx_antenna.glb",
+    "tris": 380,
+    "bbox": [
+     0.00263,
+     0.05998,
+     0.00263
+    ]
+   },
+   "COUNTED": {
+    "qty": 2
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.soft_goods"
+   },
+   {
+    "slug": "source.procedural_spline"
+   },
+   {
+    "slug": "family.antenna"
+   }
+  ]
+ },
+ {
+  "slug": "cable_rx",
+  "traits": [
+   "LABELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "RX cable"
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.soft_goods"
+   },
+   {
+    "slug": "source.procedural_spline"
+   },
+   {
+    "slug": "family.cable"
+   }
+  ]
+ },
+ {
+  "slug": "heat_shrink",
+  "traits": [
+   "LABELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Heat shrink tubing"
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.soft_goods"
+   },
+   {
+    "slug": "source.procedural_spline"
+   },
+   {
+    "slug": "family.cable"
+   }
+  ]
+ },
+ {
+  "slug": "camera",
+  "traits": [
+   "LABELED",
+   "SOURCED",
+   "MODELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "FPV camera"
+   },
+   "SOURCED": {
+    "file": "DRONEAID_model_latest.blend",
+    "object": "Camera",
+    "scale": 0.05
+   },
+   "MODELED": {
+    "file": "parts/camera.glb",
+    "tris": 440,
+    "bbox": [
+     0.0244,
+     0.01906,
+     0.01906
+    ]
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.electronics"
+   },
+   {
+    "slug": "source.vendor_cad"
+   },
+   {
+    "slug": "family.camera"
+   }
+  ]
+ },
+ {
+  "slug": "cable_camera",
+  "traits": [
+   "LABELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Camera to FC cable"
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.soft_goods"
+   },
+   {
+    "slug": "source.procedural_spline"
+   },
+   {
+    "slug": "family.cable"
+   }
+  ]
+ },
+ {
+  "slug": "zip_tie",
+  "traits": [
+   "LABELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Zip tie"
+   },
+   "COUNTED": {
+    "qty": 8
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.soft_goods"
+   },
+   {
+    "slug": "source.procedural_spline"
+   },
+   {
+    "slug": "family.zip_tie"
+   }
+  ]
+ },
+ {
+  "slug": "sticker_id",
+  "traits": [
+   "LABELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Drone ID sticker"
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.soft_goods"
+   },
+   {
+    "slug": "source.texture_only"
+   },
+   {
+    "slug": "family.sticker"
+   }
+  ]
+ },
+ {
+  "slug": "propeller",
+  "traits": [
+   "LABELED",
+   "SOURCED",
+   "MODELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Propeller",
+    "description": "10\""
+   },
+   "SOURCED": {
+    "file": "DRONEAID_model_latest.blend",
+    "object": "Propeller0",
+    "scale": 0.05
+   },
+   "MODELED": {
+    "file": "parts/propeller.glb",
+    "tris": 14548,
+    "bbox": [
+     0.17347,
+     0.00989,
+     0.20031
+    ]
+   },
+   "COUNTED": {
+    "qty": 4
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.motor"
+   },
+   {
+    "slug": "source.3d_scan"
+   },
+   {
+    "slug": "family.propeller"
+   }
+  ]
+ },
+ {
+  "slug": "computer",
+  "traits": [
+   "LABELED",
+   "SOURCED",
+   "MODELED",
+   "COUNTED"
+  ],
+  "trait": {
+   "LABELED": {
+    "name": "Companion computer"
+   },
+   "SOURCED": {
+    "file": "DRONEAID_model_latest.blend",
+    "object": "Computer",
+    "scale": 0.05
+   },
+   "MODELED": {
+    "file": "parts/computer.glb",
+    "tris": 32,
+    "bbox": [
+     0.04173,
+     0.01099,
+     0.02295
+    ]
+   },
+   "COUNTED": {
+    "qty": 1
+   }
+  },
+  "symbols": [
+   {
+    "slug": "component"
+   },
+   {
+    "slug": "material.electronics"
+   },
+   {
+    "slug": "source.photo_model"
+   },
+   {
+    "slug": "family.computer"
+   }
+  ]
+ }
+]
