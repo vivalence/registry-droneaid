@@ -23,6 +23,7 @@ export const mode = (module, dirname = module.source.dirname) => ({
   manifest: module.manifest,
   entity: { installed: false },
   stdout: new Span("mode"),
+  twitch: new Twitch(),
   module: { ...module, source: { ...module.source, dirname } },
 });
 
@@ -44,13 +45,13 @@ export async function mount() {
   em.setFilterParams("user", { user: user.id });
 
   const daemon = { slug: DAEMON, manifest: { slug: DAEMON, traits: [] }, reference: new Path(`/daemon/${DAEMON}`), modes: {}, entities, datamap: held, twitch: new Twitch(), domain };
-  daemon.twitch.use(shard.context.spread(contexts.host, daemon)).use(shard.datamap.owned());
+  daemon.twitch.use(shard.context.spread(contexts.daemonDie, daemon)).use(shard.datamap.owned());
   daemon.twitch.branch("/after").use(shard.datamap.detached(held));
   held.registerSubscriber(daemon.twitch);
 
   const seat = async (unseated) => {
     const { type, slug, name, version } = unseated.manifest;
-    const row = entities.mode.create({ type, slug, name: name ?? slug, traits: [], installed: "", version: version ?? "0.0.0" });
+    const row = entities.mode.create({ type, slug, name: name ?? slug, daemon: DAEMON, traits: [], installed: "", version: version ?? "0.0.0" });
     await em.flush();
     return Object.assign(unseated, { id: row.id, entity: row });
   };
@@ -62,6 +63,7 @@ export async function mount() {
     await DATASET(seated, daemon);
     const sink = DATASINK(seated, daemon);
     await sink.finalize();
+    daemon.twitch.graft(seated.twitch);
     return seated;
   };
 
