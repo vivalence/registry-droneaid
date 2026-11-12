@@ -1,6 +1,9 @@
 import { Datasink } from "@vivalence/typology";
 import { sections } from "./vocabulary.js";
 import { guideRow, stepRows } from "./rows.js";
+import * as quadrocopter from "./quadrocopter.js";
+import * as mari from "./mari.js";
+import * as soldering from "./soldering.js";
 
 const HERE = new URL("..", import.meta.url).pathname;
 
@@ -14,6 +17,6 @@ const write = async (path, rows) => {
 
 if (import.meta.main) {
   await write("dataset/symbols/sections.js", sections);
-  await write("dataset/literals/guides.js", [guideRow()]);
-  await write("dataset/literals/steps.js", stepRows());
+  await write("dataset/literals/guides.js", [quadrocopter, mari, soldering].map(guideRow));
+  await write("dataset/literals/steps.js", [quadrocopter, mari, soldering].flatMap(stepRows));
 }

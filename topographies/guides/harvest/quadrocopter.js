@@ -1,7 +1,7 @@
 const page = (...ids) => ids.map((id) => `manual/${id}.webp`);
 
-const warn = (text, family, ...images) => ({ text, symbols: ["note.warning", ...(family ? [family] : [])], ...(images.length ? { images } : {}) });
-const tip = (text) => ({ text, symbols: ["note.tip"] });
+const warn = (text, family, ...images) => ({ text, kind: family ? family.slice(5).toUpperCase() : "WARNING", ...(images.length ? { images } : {}) });
+const tip = (text) => ({ text, kind: "TIP" });
 
 const FRAME = [0.4209, 0.02, 0.4226];
 const STACK = [0.425, 0.02, 0.4227];
@@ -303,10 +303,10 @@ export const steps = [
 ];
 
 export const guide = {
-  slug: "droneaid",
+  slug: "quadrocopter",
   name: "DroneAid Hamburg — Plug-and-Play Assembly",
   description: "Assembly Manual (Plug-and-Play) v1.3.1 — EDTH 2026 DroneAid Hamburg",
-  subject: "drone",
+  subject: "quadro",
   lines: [
     "This guide walks you through assembling the DroneAid 10” quadcopter frame, installing motors, stack, video transmitter, receiver, camera and top plate.",
     "Follow the steps in order, pay close attention to bolt lengths and cable routing, and ask a mentor whenever something feels unclear.",

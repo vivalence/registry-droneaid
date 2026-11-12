@@ -6,7 +6,7 @@ export const manifest = {
   name: "DroneAid models",
   description:
     "The DroneAid Hamburg PnP drone as rows of the assembly domain: its parts from the blend and the kit list, " +
-    "every placement of the build under the one layer `drone`, the fasteners where the measured anchors put them. " +
+    "every placement of a build under the layer of its body, `quadro` or `interceptor`, the fasteners where the measured anchors put them, the interceptor's printed pieces laid out in a row per sub-assembly beside the stages it shares with the quadro. " +
     "Geometry on the freight in metres, Y-up. The rows are installed from dataset/ and drained back to it on every change; harvest/ writes them first.",
   version: "0.1.0",
   traits: ["DATASET", "FILESET", "DATASINK"],

@@ -24,27 +24,22 @@ describe("@droneaid/topography/guides — the manual as rows, installed from dis
     for (const row of sections) expect(row.traits, row.slug).toEqual(["ONTOLOGICAL", "LABELED"]);
   });
 
-  it("P-guide: one guide, droneaid, over the subject drone — 33 steps in 8 sections, each step sequenced once, the intro and its two notes carried", () => {
-    expect(written.length).toBe(1);
-    const [guide] = written;
-    expect(guide.slug).toBe("droneaid");
-    expect(guide.trait.SEQUENCED.subject).toBe("drone");
-    const sequenced = guide.trait.SEQUENCED.sections.flatMap((section) => section.steps);
-    expect(guide.trait.SEQUENCED.sections.length).toBe(8);
-    expect(sequenced.length).toBe(33);
-    expect(new Set(sequenced).size).toBe(33);
-    expect(sequenced).toEqual(steps.map((row) => row.slug));
-    expect(guide.trait.INSTRUCTED.lines.length).toBeGreaterThanOrEqual(2);
-    expect(guide.trait.ANNOTATED.notes.length).toBe(2);
-    expect(guide.uses.map((one) => one.slug)).toEqual(["drone", ...sequenced].sort());
+  it("P-guides: a step is sequenced once, by one guide; every step a guide sequences is on disk; a guide uses its subject and its steps", () => {
+    const sequenced = (guide) => guide.trait.SEQUENCED.sections.flatMap((section) => section.steps);
+    const every = written.flatMap(sequenced);
+    const held = new Set(steps.map((row) => row.slug));
+    expect(new Set(every).size).toBe(every.length);
+    for (const slug of every) expect(held.has(slug), slug).toBe(true);
+    for (const guide of written) {
+      const used = new Set((guide.uses ?? []).map((one) => one.slug));
+      for (const slug of [guide.trait.SEQUENCED.subject, ...sequenced(guide)].filter(Boolean)) expect(used.has(slug), `${guide.slug} uses ${slug}`).toBe(true);
+    }
   });
 
   it("P-freight: every picture a step or the guide names is a page on the freight", () => {
     const pages = new Set(list("freight/manual").map((name) => `manual/${name}`));
-    expect(pages.size).toBe(88);
     const named = [...written, ...steps].flatMap((row) => [...row.trait.INSTRUCTED.images, ...row.trait.ANNOTATED.notes.flatMap((note) => note.images ?? [])]);
     for (const image of named) expect(pages.has(image), image).toBe(true);
-    expect(new Set(named).size).toBeGreaterThan(80);
     expect(guides.fileset.path).toBe("freight");
   });
 });

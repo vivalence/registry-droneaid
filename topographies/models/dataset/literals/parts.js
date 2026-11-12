@@ -1,5 +1,49 @@
 export default [
   {
+    "slug": "antenna_cover",
+    "symbols": [
+      {
+        "slug": "family.mount"
+      },
+      {
+        "slug": "material.printed"
+      },
+      {
+        "slug": "part"
+      },
+      {
+        "slug": "source.print_stl"
+      }
+    ],
+    "trait": {
+      "COUNTED": {
+        "qty": 4
+      },
+      "LABELED": {
+        "name": "ELRS antenna cover (TPU)"
+      },
+      "MODELED": {
+        "bbox": [
+          0.03641,
+          0.0238,
+          0.01335
+        ],
+        "file": "parts/antenna_cover.glb",
+        "tris": 7672
+      },
+      "SOURCED": {
+        "file": "tail/TPU_elrs_ant_wide_closed.stl",
+        "scale": 0.001
+      }
+    },
+    "traits": [
+      "LABELED",
+      "SOURCED",
+      "MODELED",
+      "COUNTED"
+    ]
+  },
+  {
     "slug": "antenna_mount",
     "symbols": [
       {
@@ -76,6 +120,50 @@ export default [
         "file": "DRONEAID_model_latest.blend",
         "object": "Antenna.00",
         "scale": 0.05
+      }
+    },
+    "traits": [
+      "LABELED",
+      "SOURCED",
+      "MODELED",
+      "COUNTED"
+    ]
+  },
+  {
+    "slug": "antenna_standoff",
+    "symbols": [
+      {
+        "slug": "family.mount"
+      },
+      {
+        "slug": "material.printed"
+      },
+      {
+        "slug": "part"
+      },
+      {
+        "slug": "source.print_stl"
+      }
+    ],
+    "trait": {
+      "COUNTED": {
+        "qty": 1
+      },
+      "LABELED": {
+        "name": "Antenna standoff"
+      },
+      "MODELED": {
+        "bbox": [
+          0.03017,
+          0.035,
+          0.02675
+        ],
+        "file": "parts/antenna_standoff.glb",
+        "tris": 5676
+      },
+      "SOURCED": {
+        "file": "tail/standoff/standoff_v2.stl",
+        "scale": 0.001
       }
     },
     "traits": [
@@ -787,7 +875,7 @@ export default [
     ]
   },
   {
-    "slug": "drone",
+    "slug": "drive",
     "symbols": [
       {
         "slug": "part"
@@ -795,8 +883,8 @@ export default [
     ],
     "trait": {
       "LABELED": {
-        "description": "Frame: 10” Partizan Edition PT10 V3 — the plug-and-play build of the EDTH 2026 DroneAid Hamburg manual v1.3.1",
-        "name": "DroneAid 10″ quadcopter"
+        "description": "Motors, their bolts and wires, propellers and prop nuts",
+        "name": "Drive"
       }
     },
     "traits": [
@@ -887,6 +975,23 @@ export default [
       "SOURCED",
       "MODELED",
       "COUNTED"
+    ]
+  },
+  {
+    "slug": "frame",
+    "symbols": [
+      {
+        "slug": "part"
+      }
+    ],
+    "trait": {
+      "LABELED": {
+        "description": "Plates, arms and stands with their bolts — the manual's Frame Assembly",
+        "name": "Frame"
+      }
+    },
+    "traits": [
+      "LABELED"
     ]
   },
   {
@@ -1057,6 +1162,67 @@ export default [
     ]
   },
   {
+    "slug": "head",
+    "symbols": [
+      {
+        "slug": "part"
+      }
+    ],
+    "trait": {
+      "LABELED": {
+        "description": "The tilting camera head and its lens cover",
+        "name": "Head"
+      }
+    },
+    "traits": [
+      "LABELED"
+    ]
+  },
+  {
+    "slug": "head_shell",
+    "symbols": [
+      {
+        "slug": "family.mount"
+      },
+      {
+        "slug": "material.printed"
+      },
+      {
+        "slug": "part"
+      },
+      {
+        "slug": "source.print_stl"
+      }
+    ],
+    "trait": {
+      "COUNTED": {
+        "qty": 1
+      },
+      "LABELED": {
+        "name": "Camera head"
+      },
+      "MODELED": {
+        "bbox": [
+          0.04725,
+          0.03504,
+          0.07201
+        ],
+        "file": "parts/head_shell.glb",
+        "tris": 14306
+      },
+      "SOURCED": {
+        "file": "head/drone_head.stl",
+        "scale": 0.001
+      }
+    },
+    "traits": [
+      "LABELED",
+      "SOURCED",
+      "MODELED",
+      "COUNTED"
+    ]
+  },
+  {
     "slug": "heat_shrink",
     "symbols": [
       {
@@ -1079,6 +1245,111 @@ export default [
     },
     "traits": [
       "LABELED",
+      "COUNTED"
+    ]
+  },
+  {
+    "slug": "hinge",
+    "symbols": [
+      {
+        "slug": "family.mount"
+      },
+      {
+        "slug": "material.printed"
+      },
+      {
+        "slug": "part"
+      },
+      {
+        "slug": "source.print_stl"
+      }
+    ],
+    "trait": {
+      "COUNTED": {
+        "qty": 4
+      },
+      "LABELED": {
+        "name": "Hinge, short"
+      },
+      "MODELED": {
+        "bbox": [
+          0.01618,
+          0.00877,
+          0.01
+        ],
+        "file": "parts/hinge.glb",
+        "tris": 3482
+      },
+      "SOURCED": {
+        "file": "tail/hinge_short.stl",
+        "scale": 0.001
+      }
+    },
+    "traits": [
+      "LABELED",
+      "SOURCED",
+      "MODELED",
+      "COUNTED"
+    ]
+  },
+  {
+    "slug": "interceptor",
+    "symbols": [
+      {
+        "slug": "part"
+      }
+    ],
+    "trait": {
+      "LABELED": {
+        "description": "Frame: 10” Partizan Edition PT10 V3 — built as the quadro through the stack, then its own tail, VTX mount and head",
+        "name": "PT10 interceptor"
+      }
+    },
+    "traits": [
+      "LABELED"
+    ]
+  },
+  {
+    "slug": "lens_cover",
+    "symbols": [
+      {
+        "slug": "family.mount"
+      },
+      {
+        "slug": "material.printed"
+      },
+      {
+        "slug": "part"
+      },
+      {
+        "slug": "source.print_stl"
+      }
+    ],
+    "trait": {
+      "COUNTED": {
+        "qty": 1
+      },
+      "LABELED": {
+        "name": "Camera lens cover (TPU)"
+      },
+      "MODELED": {
+        "bbox": [
+          0.0162,
+          0.0162,
+          0.0064
+        ],
+        "file": "parts/lens_cover.glb",
+        "tris": 1416
+      },
+      "SOURCED": {
+        "file": "head/TPU_lens_cover.stl",
+        "scale": 0.001
+      }
+    },
+    "traits": [
+      "LABELED",
+      "SOURCED",
+      "MODELED",
       "COUNTED"
     ]
   },
@@ -1258,6 +1529,50 @@ export default [
     ]
   },
   {
+    "slug": "pigtail_holder",
+    "symbols": [
+      {
+        "slug": "family.mount"
+      },
+      {
+        "slug": "material.printed"
+      },
+      {
+        "slug": "part"
+      },
+      {
+        "slug": "source.print_stl"
+      }
+    ],
+    "trait": {
+      "COUNTED": {
+        "qty": 1
+      },
+      "LABELED": {
+        "name": "VTX pigtail holder"
+      },
+      "MODELED": {
+        "bbox": [
+          0.06875,
+          0.035,
+          0.01768
+        ],
+        "file": "parts/pigtail_holder.glb",
+        "tris": 17378
+      },
+      "SOURCED": {
+        "file": "vtx/vtx_pigtail.stl",
+        "scale": 0.001
+      }
+    },
+    "traits": [
+      "LABELED",
+      "SOURCED",
+      "MODELED",
+      "COUNTED"
+    ]
+  },
+  {
     "slug": "prop_nut_m5",
     "symbols": [
       {
@@ -1337,6 +1652,23 @@ export default [
     ]
   },
   {
+    "slug": "quadro",
+    "symbols": [
+      {
+        "slug": "part"
+      }
+    ],
+    "trait": {
+      "LABELED": {
+        "description": "Frame: 10” Partizan Edition PT10 V3 — the plug-and-play build of the EDTH 2026 DroneAid Hamburg manual v1.3.1",
+        "name": "DroneAid 10″ quadcopter"
+      }
+    },
+    "traits": [
+      "LABELED"
+    ]
+  },
+  {
     "slug": "rx",
     "symbols": [
       {
@@ -1372,6 +1704,23 @@ export default [
       "LABELED",
       "PARAMETRIC",
       "COUNTED"
+    ]
+  },
+  {
+    "slug": "stack",
+    "symbols": [
+      {
+        "slug": "part"
+      }
+    ],
+    "trait": {
+      "LABELED": {
+        "description": "ESC and FC on their grommets, the stack bolts and locknuts",
+        "name": "Stack"
+      }
+    },
+    "traits": [
+      "LABELED"
     ]
   },
   {
@@ -1440,6 +1789,111 @@ export default [
     },
     "traits": [
       "LABELED",
+      "COUNTED"
+    ]
+  },
+  {
+    "slug": "tail",
+    "symbols": [
+      {
+        "slug": "part"
+      }
+    ],
+    "trait": {
+      "LABELED": {
+        "description": "The two tail halves, their hinges, the antenna standoff and covers",
+        "name": "Tail"
+      }
+    },
+    "traits": [
+      "LABELED"
+    ]
+  },
+  {
+    "slug": "tail_half_a",
+    "symbols": [
+      {
+        "slug": "family.mount"
+      },
+      {
+        "slug": "material.printed"
+      },
+      {
+        "slug": "part"
+      },
+      {
+        "slug": "source.print_stl"
+      }
+    ],
+    "trait": {
+      "COUNTED": {
+        "qty": 1
+      },
+      "LABELED": {
+        "name": "Tail half A"
+      },
+      "MODELED": {
+        "bbox": [
+          0.0298,
+          0.015,
+          0.14606
+        ],
+        "file": "parts/tail_half_a.glb",
+        "tris": 14162
+      },
+      "SOURCED": {
+        "file": "tail/tail_half_A_with_holders_star.stl",
+        "scale": 0.001
+      }
+    },
+    "traits": [
+      "LABELED",
+      "SOURCED",
+      "MODELED",
+      "COUNTED"
+    ]
+  },
+  {
+    "slug": "tail_half_b",
+    "symbols": [
+      {
+        "slug": "family.mount"
+      },
+      {
+        "slug": "material.printed"
+      },
+      {
+        "slug": "part"
+      },
+      {
+        "slug": "source.print_stl"
+      }
+    ],
+    "trait": {
+      "COUNTED": {
+        "qty": 1
+      },
+      "LABELED": {
+        "name": "Tail half B"
+      },
+      "MODELED": {
+        "bbox": [
+          0.0298,
+          0.015,
+          0.14606
+        ],
+        "file": "parts/tail_half_b.glb",
+        "tris": 12866
+      },
+      "SOURCED": {
+        "file": "tail/tail_half_B_with_star.stl",
+        "scale": 0.001
+      }
+    },
+    "traits": [
+      "LABELED",
+      "SOURCED",
+      "MODELED",
       "COUNTED"
     ]
   },
@@ -1525,6 +1979,23 @@ export default [
     ]
   },
   {
+    "slug": "top",
+    "symbols": [
+      {
+        "slug": "part"
+      }
+    ],
+    "trait": {
+      "LABELED": {
+        "description": "The top plate, its bolts, the battery pad and the ID sticker",
+        "name": "Top"
+      }
+    },
+    "traits": [
+      "LABELED"
+    ]
+  },
+  {
     "slug": "vtx",
     "symbols": [
       {
@@ -1568,6 +2039,23 @@ export default [
     ]
   },
   {
+    "slug": "vtx_mount",
+    "symbols": [
+      {
+        "slug": "part"
+      }
+    ],
+    "trait": {
+      "LABELED": {
+        "description": "The VTX spacer and the pigtail holder",
+        "name": "VTX mount"
+      }
+    },
+    "traits": [
+      "LABELED"
+    ]
+  },
+  {
     "slug": "vtx_pigtail",
     "symbols": [
       {
@@ -1590,6 +2078,50 @@ export default [
     },
     "traits": [
       "LABELED",
+      "COUNTED"
+    ]
+  },
+  {
+    "slug": "vtx_spacer",
+    "symbols": [
+      {
+        "slug": "family.mount"
+      },
+      {
+        "slug": "material.printed"
+      },
+      {
+        "slug": "part"
+      },
+      {
+        "slug": "source.print_stl"
+      }
+    ],
+    "trait": {
+      "COUNTED": {
+        "qty": 1
+      },
+      "LABELED": {
+        "name": "VTX 20×20 spacer, 3 mm (TPU)"
+      },
+      "MODELED": {
+        "bbox": [
+          0.02429,
+          0.003,
+          0.02429
+        ],
+        "file": "parts/vtx_spacer.glb",
+        "tris": 1200
+      },
+      "SOURCED": {
+        "file": "vtx/TPU_m2_20x20_3mm_spacer.stl",
+        "scale": 0.001
+      }
+    },
+    "traits": [
+      "LABELED",
+      "SOURCED",
+      "MODELED",
       "COUNTED"
     ]
   },

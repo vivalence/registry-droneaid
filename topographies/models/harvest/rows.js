@@ -6,7 +6,7 @@ const LAYER = kit.subject.slug;
 
 const refs = (slugs) => [...new Set(slugs.filter(Boolean))].sort().map((slug) => ({ slug }));
 
-const literal = (slug, traits, trait, symbols, uses = []) => ({ slug, traits, trait, symbols: refs(symbols), ...(uses.length ? { uses: refs(uses) } : {}) });
+export const literal = (slug, traits, trait, symbols, uses = []) => ({ slug, traits, trait, symbols: refs(symbols), ...(uses.length ? { uses: refs(uses) } : {}) });
 
 const labeled = (name, description) => ({ name, ...(description ? { description } : {}) });
 
@@ -63,6 +63,8 @@ const rxSeat = () => {
 
 export const parts = () => [
   literal(kit.subject.slug, ["LABELED"], { LABELED: labeled(kit.subject.name, kit.subject.description) }, ["part"]),
+  ...kit.assemblies.map((assembly) =>
+    literal(assembly.slug, ["LABELED"], { LABELED: labeled(assembly.name, assembly.description) }, ["part"])),
   ...blend.parts.map(modeled),
   standoffPart(),
   ...kit.fasteners.map(parametric),
@@ -71,12 +73,29 @@ export const parts = () => [
   ...kit.loose.map(counted),
 ];
 
-const place = (name, ref, translation, { rotation, scale, joins, joint } = {}) =>
-  literal(`${LAYER}.${name}`, ["LABELED", "PLACED", ...(joins ? ["JOINED"] : [])], {
+const place = (name, ref, translation, { rotation, scale, joins, joint } = {}) => ({
+  name,
+  ref,
+  translation,
+  rotation,
+  scale,
+  joins,
+  joint,
+});
+
+const housed = (one) =>
+  (kit.assemblies.find((assembly) => assembly.names.includes(one.name)) ??
+    kit.assemblies.find((assembly) => assembly.refs.includes(one.ref)))?.slug ?? LAYER;
+
+const seated = (homes) => ({ name, ref, translation, rotation, scale, joins, joint }) => {
+  const layer = homes.get(name);
+  const held = (joins ?? []).filter((join) => homes.get(join) === layer);
+  return literal(`${layer}.${name}`, ["LABELED", "PLACED", ...(held.length ? ["JOINED"] : [])], {
     LABELED: { name },
-    PLACED: { layer: LAYER, name, ref, ...(translation ? { translation } : {}), ...(rotation ? { rotation } : {}), ...(scale ? { scale } : {}) },
-    ...(joins ? { JOINED: { joins } } : {}),
-  }, ["placement", joint], [ref, LAYER]);
+    PLACED: { layer, name, ref, ...(translation ? { translation } : {}), ...(rotation ? { rotation } : {}), ...(scale ? { scale } : {}) },
+    ...(held.length ? { JOINED: { joins: held } } : {}),
+  }, ["placement", joint], [ref, layer]);
+};
 
 const series = (ref, items, shape) => items.map((item, index) => place(`${ref}.${index}`, ref, ...shape(item, index)));
 
@@ -92,7 +111,8 @@ export const placements = () => {
   const rx = rxSeat();
   const stackOf = (index) => `standoff.${index}`;
 
-  return [
+  const composed = [
+    ...kit.assemblies.map((assembly) => place(`${assembly.slug}.0`, assembly.slug)),
     ...blend.placements.map((one) => place(one.name, one.ref, one.translation, { rotation: one.rotation })),
 
     ...series("standoff", [...held.stack, ...held.corners], (translation, index) => [translation, { joins: index < 4 ? ["frame_bottom.0", `bolt_m3_18.${index}`] : ["frame_bottom.0", `bolt_m3_8.${index - 4}`], joint: "joint.threaded" }]),
@@ -126,4 +146,6 @@ export const placements = () => {
     ...["cable_esc_fc", "cable_vtx_fc", "cable_camera", "cable_rx"].map((slug, index) => place(`${slug}.0`, slug, undefined, { joins: [["esc.0", "fc.0"], ["fc.0", "vtx.0"], ["fc.0", "camera.0"], ["fc.0", "rx.0"]][index], joint: "joint.plugged" })),
     ...series("motor_wire", motors, ({ index, centre: [x, z] }) => [v(x, anchors.at(`motor.${index}`)[1], z), { scale: [[1, 1, 1], [-1, 1, 1], [-1, 1, -1], [1, 1, -1]][index], joins: [`motor.${index}`, "esc.0"], joint: "joint.plugged" }]),
   ];
+  const homes = new Map(composed.map((one) => [one.name, housed(one)]));
+  return composed.map(seated(homes));
 };

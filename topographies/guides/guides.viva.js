@@ -5,9 +5,9 @@ export const manifest = {
   slug: "guides",
   name: "DroneAid guides",
   description:
-    "The DroneAid Hamburg PnP assembly manual as rows of the assembly domain: one guide over the drone of @droneaid/topography/models, " +
-    "33 steps in the manual's 8 sections, the manual's pages on the freight. " +
-    "The rows are installed from dataset/ and drained back to it on every change; harvest/ writes them first.",
+    "The build guides over the bodies of @droneaid/topography/models as rows of the assembly domain: quadrocopter, the DroneAid Hamburg PnP " +
+    "manual over the quadro, mari, the Mari Drone manual over the interceptor, and soldering, the soldering checklist over no body; the manuals' pages on the freight. " +
+    "The rows are installed from dataset/ and drained back to it on every change; harvest/ seeds them once.",
   version: "0.1.0",
   traits: ["DATASET", "FILESET", "DATASINK"],
 };

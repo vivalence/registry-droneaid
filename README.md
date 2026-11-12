@@ -9,7 +9,7 @@ It carries one instance — the `droneaid` daemon — whose kernel is the assemb
 the vocabulary), this package's two topographies — `topographies/models`, the drone: its parts, the
 kit and every placement of the build; `topographies/guides`, the manual: one guide, 33 steps in 8
 sections, the manual's pages on the freight — the importer that reads a blend file into rows
-(`@assembly/editor/import`), and `@assembly`'s editors and player over them.
+(`@assembly/model/import`), and `@assembly`'s editors and player over them.
 
 The rows live on disk, in this package, as each topography's `dataset/`. The daemon installs them
 at boot (DATASET) and writes every change back to the same files (DATASINK), so an edit in the
@@ -19,7 +19,7 @@ in `git diff`. The daemon is working memory; the files are the record.
 ## Getting started
 
 Everything runs through `viva`, the vivalence shell tool. If you do not have it yet, follow the
-[vivalence quickstart](https://github.com/vivalence/vivalence#quickstart) up to `viva ledger/init`
+[vivalence quickstart](https://github.com/vivalence/vivalence#quickstart) up to `viva ledger/install`
 (deno, the checkout, `deno task install`, the ledger). Then:
 
 ### 1 — tap the package
@@ -37,10 +37,10 @@ this package's topography and guide.
 
 ### 2 — create the instance
 
-    viva instance/create @droneaid/instance/droneaid --use --init
+    viva instance/clone @droneaid/instance/droneaid --use --install
 
-`create` copies the recipe to `~/.viva/instances/droneaid/`, `--use` binds it to this shell and
-`--init` runs the first boot: `.env` is populated (defaults, minted secrets), and you are asked to
+`clone` copies the recipe to `~/.viva/instances/droneaid/`, `--use` binds it to this shell and
+`--install` runs the first boot: `.env` is populated (defaults, minted secrets), and you are asked to
 create the first user.
 
 Both keys are optional. The build guide runs without either; they are what gives it a mentor in
@@ -49,28 +49,43 @@ the chat. One is enough, and a key left blank leaves its provider dormant:
     SECRET_VIVA_ANTHROPIC_API_KEY=      # optional
     SECRET_VIVA_OPENROUTER_API_KEY=     # optional
 
-The importer mounts `<instance>/mountpoint/daemon_droneaid/mode_editor_import/`: drop a `.blend` there.
+The importer mounts `<instance>/mountpoint/daemon_droneaid/mode_model_import/`: drop a `.blend` there.
 
 ### 3 — run it
 
-    viva instance/run
+    viva instance/up
 
     run runtime=… anima=…
       ➜  Local:   http://127.0.0.1:1794/
     launching on http://localhost:2501/
 
 Open **http://localhost:1794**, log in with the account from step 2, pick the `droneaid` daemon and
-open the **guide player** on `droneaid`, the guide editor to change a step, or the assembly editor
+open the **guide player** on `quadrocopter` or `mari`, the guide editor to change a step, or the assembly editor
 to move a part — every change drains back to `topographies/*/dataset/`. **Import** walks a new blend
 file into rows beside them: harvest (blender on the daemon's host) or load an intake, interpret,
 annotate, embed, commit.
 
+
+### 3b — or run it from the published images
+
+The instance folder is a compose project: `docker-compose.yml`, `Dockerfile`, `ledger.viva.json`
+and `.env.example` sit beside the recipe. No `viva` on the host is needed.
+
+    cd instances/droneaid
+    cp .env.example .env          # set SECRET_VIVA_JWT (openssl rand -base64 24) and a key
+    docker compose build runtime  # the runtime image plus @assembly and @droneaid
+    docker compose up -d
+
+The runtime answers on `:2501`, anima on `:1794`. `ledger.viva.json` is the ledger recipe the
+containers run with: sign-up by name alone, one OpenRouter dialogue faculty. The images are `arm64`.
+
 ### 4 — build
 
-- **The guide** is `droneaid`: 33 steps in the manual's 8 sections over the subject part `drone`.
+- **The guides**: `quadrocopter`, 33 steps in the manual's 8 sections over the subject part `quadro`; `mari`, the
+  interceptor's own, 20 steps over the subject part `interceptor`.
   `→` / `←` or the step list; each step seats the placements it installs, moves the camera and
   shows the manual's lines, warnings and pictures. The props come last.
-- **The stage** draws every placement of `drone` from the freight (`models/freight/parts/*.glb`) or
+- **The stage** draws every placement of `quadro` from the freight (`models/freight/parts/*.glb`) or
   from a generator (`/geometry`: bolts, nuts, grommets, cables); what is not built yet is a ghost.
 - **The mentor**: the chat beside the buffer. Ask what step 6 threads and it answers the four 18 mm
   bolts and the two 16 mm by slug.
@@ -81,7 +96,7 @@ The rows were first written by each topography's `harvest/` — pure data module
 placements as the importer read them, the kit, the measured anchors, the 33 steps) and a
 `harvest.js` that writes `dataset/` in the drain's own canonical form, so the next drain is a no-op:
 
-    deno run -A --config <checkout>/deno.jsonc topographies/models/harvest/harvest.js --seat <mountpoint>/daemon_droneaid/mode_editor_import/parts
+    deno run -A --config <checkout>/deno.jsonc topographies/models/harvest/harvest.js --seat <mountpoint>/daemon_droneaid/mode_model_import/parts
     deno run -A --config <checkout>/deno.jsonc topographies/guides/harvest/harvest.js
 
 `--seat` also copies the importer's GLBs to `freight/parts/` and cuts one standoff out of the

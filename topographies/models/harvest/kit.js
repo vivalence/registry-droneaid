@@ -46,7 +46,38 @@ export const loose = [
   { slug: "sticker_id", name: "Drone ID sticker", qty: 1, family: "family.sticker", material: "material.soft_goods" },
 ];
 
-export const subject = { slug: "drone", name: "DroneAid 10″ quadcopter", description: "Frame: 10” Partizan Edition PT10 V3 — the plug-and-play build of the EDTH 2026 DroneAid Hamburg manual v1.3.1" };
+export const assemblies = [
+  {
+    slug: "frame",
+    name: "Frame",
+    description: "Plates, arms and stands with their bolts — the manual's Frame Assembly",
+    refs: ["frame_root", "frame_bottom", "motor_arm", "standoff", "bolt_m3_16", "bolt_m3_18"],
+    names: ["bolt_m3_8.0", "bolt_m3_8.1", "bolt_m3_8.2", "bolt_m3_8.3"],
+  },
+  {
+    slug: "drive",
+    name: "Drive",
+    description: "Motors, their bolts and wires, propellers and prop nuts",
+    refs: ["motor", "bolt_m3_10", "propeller", "prop_nut_m5", "motor_wire"],
+    names: [],
+  },
+  {
+    slug: "stack",
+    name: "Stack",
+    description: "ESC and FC on their grommets, the stack bolts and locknuts",
+    refs: ["esc", "fc", "grommet", "bolt_m3_30", "locknut_m3", "cable_esc_fc"],
+    names: [],
+  },
+  {
+    slug: "top",
+    name: "Top",
+    description: "The top plate, its bolts, the battery pad and the ID sticker",
+    refs: ["frame_top", "bolt_m3_8", "battery_pad", "sticker_id"],
+    names: [],
+  },
+];
+
+export const subject = { slug: "quadro", name: "DroneAid 10″ quadcopter", description: "Frame: 10” Partizan Edition PT10 V3 — the plug-and-play build of the EDTH 2026 DroneAid Hamburg manual v1.3.1" };
 
 export const named = {
   frame_root: ["Bottom plate", "Carbon, the hub the arms bolt to — the manual's [1]"],

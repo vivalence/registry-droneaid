@@ -3,6 +3,7 @@ import * as models from "../models.viva.js";
 import families from "../dataset/symbols/families.js";
 import parts from "../dataset/literals/parts.js";
 import placements from "../dataset/literals/placements.js";
+import { load, meshes, winding } from "../harvest/glb.js";
 
 const { describe, it, expect } = specimen;
 
@@ -31,18 +32,19 @@ describe("@droneaid/topography/models — the drone as rows, installed from disk
     expect(new Set(families.map((row) => row.slug)).size).toBe(families.length);
   });
 
-  it("P-rows: every part carries the root symbol and a family; every placement lies in the one layer `drone`, places a part the file holds, and uses its ref and its layer", () => {
+  it("P-rows: every part carries the root symbol and a family; every placement lies in the layer of a body or of one of its sub-assemblies, places a part the file holds, and uses its ref and its layer", () => {
     const slugs = new Set(parts.map((row) => row.slug));
-    expect(slugs.has("drone")).toBe(true);
+    const layers = new Set(placements.map((row) => row.trait.PLACED.layer));
+    expect([...layers].sort()).toEqual(["drive", "frame", "head", "interceptor", "quadro", "stack", "tail", "top", "vtx_mount"]);
+    for (const layer of layers) expect(slugs.has(layer), layer).toBe(true);
     for (const row of parts) {
       expect(row.symbols.some((one) => one.slug === "part"), row.slug).toBe(true);
-      if (row.slug !== "drone") expect(row.symbols.some((one) => one.slug.startsWith("family.")), row.slug).toBe(true);
+      if (!layers.has(row.slug)) expect(row.symbols.some((one) => one.slug.startsWith("family.")), row.slug).toBe(true);
     }
     for (const row of placements) {
-      expect(row.trait.PLACED.layer, row.slug).toBe("drone");
-      expect(row.slug).toBe(`drone.${row.trait.PLACED.name}`);
+      expect(row.slug).toBe(`${row.trait.PLACED.layer}.${row.trait.PLACED.name}`);
       expect(slugs.has(row.trait.PLACED.ref), row.slug).toBe(true);
-      expect(row.uses.map((one) => one.slug).sort()).toEqual(["drone", row.trait.PLACED.ref].sort());
+      expect(row.uses.map((one) => one.slug).sort()).toEqual([row.trait.PLACED.layer, row.trait.PLACED.ref].sort());
     }
   });
 
@@ -50,5 +52,15 @@ describe("@droneaid/topography/models — the drone as rows, installed from disk
     const modeled = parts.filter((row) => row.trait.MODELED).map((row) => row.trait.MODELED.file.replace("parts/", "")).sort();
     expect(list("freight/parts")).toEqual(modeled);
     expect(models.fileset.path).toBe("freight");
+  });
+
+  it("P-winding: every part mesh on the freight faces outward — a positive volume, and where it is closed no two faces wind one edge the same way", async () => {
+    for (const name of list("freight/parts")) {
+      for (const mesh of meshes(await load(Deno.readFileSync(`${HERE}freight/parts/${name}`).buffer))) {
+        const { volume, doubled, loose } = winding(mesh.geometry);
+        expect(volume * mesh.matrixWorld.determinant(), name).toBeGreaterThan(0);
+        if (loose === 0) expect(doubled, name).toBe(0);
+      }
+    }
   });
 });

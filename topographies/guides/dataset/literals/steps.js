@@ -1,6 +1,6 @@
 export default [
   {
-    "slug": "droneaid.01",
+    "slug": "mari.01",
     "symbols": [
       {
         "slug": "step"
@@ -16,16 +16,1994 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.length"
-            ],
+            "kind": "LENGTH",
             "text": "Look for 30mm bolts in the stack set, 12mm in the additional package."
           },
           {
-            "symbols": [
-              "note.tip"
-            ],
+            "kind": "TIP",
+            "text": "Use a magnetic bolt organizer."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": []
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/9547e69a9046.webp",
+          "manual/c5ca536dc674.webp",
+          "manual/58060fba8463.webp"
+        ],
+        "lines": [
+          {
+            "text": "Unpack the frame and identify all frame components."
+          },
+          {
+            "text": "Bottom plate 1x, top plate 1x, arm sandwich plate 1x, battery pad 1x, arms 4x, battery straps 2x, additional RX antenna mount 1x, camera mount 2x, antenna mount 1x, standoffs 8x, bolts."
+          },
+          {
+            "text": "Before starting, sort all bolts by size using the measure tool."
+          },
+          {
+            "text": "Bolt sizes: 30mm 4x (stack), 28mm 4x (long), 18mm 4x (medium), 16mm 6x (short), 12mm 1x (RX antenna), 8mm 16x (top plate), 4mm 2x (M2, thin, camera)."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Frame Assembly.",
+        "name": "Unpack and sort the kit"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.721,
+            0.3,
+            0.723
+          ],
+          "target": [
+            0.4209,
+            0.02,
+            0.4226
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ]
+  },
+  {
+    "slug": "mari.02",
+    "symbols": [
+      {
+        "slug": "step"
+      },
+      {
+        "slug": "tool.hex_2_0"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": []
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "frame.frame_root.0"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/8e8e29009e7f.webp",
+          "manual/2dab0a680257.webp"
+        ],
+        "lines": [
+          {
+            "text": "Prepare to join: bottom plate [1], sandwich plate [3], arms [6]; bolts 18mm 4x (medium), 16mm 6x (short); standoffs 4x; screwdriver Hex 2.0."
+          },
+          {
+            "text": "Identify the top side of the bottom plate [1]: the top side is where integrated nuts are inserted into the frame and sticking out of it."
+          },
+          {
+            "text": "Place the bottom plate [1] in front of you, bottom side up."
+          },
+          {
+            "text": "Make sure that nuts are not sticking out to the top."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Frame Assembly.",
+        "name": "The bottom plate, bottom side up"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.721,
+            0.3,
+            0.723
+          ],
+          "target": [
+            0.4209,
+            0.02,
+            0.4226
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "frame.frame_root.0"
+      }
+    ]
+  },
+  {
+    "slug": "mari.03",
+    "symbols": [
+      {
+        "slug": "step"
+      },
+      {
+        "slug": "tool.hex_2_0"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "LOOSE",
+            "text": "Don’t tighten it yet! Leave it loose."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "frame.motor_arm.0"
+          },
+          {
+            "active": true,
+            "literal": "frame.frame_bottom.0"
+          },
+          {
+            "active": true,
+            "literal": "frame.bolt_m3_16.0"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/cf5a470bc835.webp",
+          "manual/20d885202ff6.webp",
+          "manual/dff5a5f0dab5.webp"
+        ],
+        "lines": [
+          {
+            "text": "Place one arm at the appropriate position on top."
+          },
+          {
+            "text": "Cover it by the bottom plate and thread the 16mm bolt."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Frame Assembly.",
+        "name": "The first arm"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.721,
+            0.3,
+            0.723
+          ],
+          "target": [
+            0.4209,
+            0.02,
+            0.4226
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "frame.bolt_m3_16.0"
+      },
+      {
+        "slug": "frame.frame_bottom.0"
+      },
+      {
+        "slug": "frame.motor_arm.0"
+      }
+    ]
+  },
+  {
+    "slug": "mari.04",
+    "symbols": [
+      {
+        "slug": "step"
+      },
+      {
+        "slug": "tool.hex_2_0"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "LOOSE",
+            "text": "Don’t tighten it yet! Leave it loose."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "frame.motor_arm.1"
+          },
+          {
+            "active": true,
+            "literal": "frame.bolt_m3_16.1"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/058347a42b8b.webp",
+          "manual/d4b6b6d2cf32.webp",
+          "manual/8dc4dc4db648.webp",
+          "manual/30f60e40f264.webp"
+        ],
+        "lines": [
+          {
+            "text": "Place the second arm at the appropriate position on top of the middle frame."
+          },
+          {
+            "text": "Align the bottom plate and thread the 16mm bolt to secure the second arm."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Frame Assembly.",
+        "name": "The second arm"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.721,
+            0.3,
+            0.723
+          ],
+          "target": [
+            0.4209,
+            0.02,
+            0.4226
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "frame.bolt_m3_16.1"
+      },
+      {
+        "slug": "frame.motor_arm.1"
+      }
+    ]
+  },
+  {
+    "slug": "mari.05",
+    "symbols": [
+      {
+        "slug": "step"
+      },
+      {
+        "slug": "tool.hex_2_0"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "LOOSE",
+            "text": "Don’t tighten it yet! Leave it loose."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "frame.motor_arm.2"
+          },
+          {
+            "active": true,
+            "literal": "frame.motor_arm.3"
+          },
+          {
+            "active": true,
+            "literal": "frame.bolt_m3_16.2"
+          },
+          {
+            "active": true,
+            "literal": "frame.bolt_m3_16.3"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/7edcc1800f63.webp",
+          "manual/69f6eb81863f.webp",
+          "manual/a5cbefd7a824.webp"
+        ],
+        "lines": [
+          {
+            "text": "Place remaining arms between the middle and bottom plates at the appropriate positions one by one and thread the 16mm bolts."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Frame Assembly.",
+        "name": "The remaining arms"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.721,
+            0.3,
+            0.723
+          ],
+          "target": [
+            0.4209,
+            0.02,
+            0.4226
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "frame.bolt_m3_16.2"
+      },
+      {
+        "slug": "frame.bolt_m3_16.3"
+      },
+      {
+        "slug": "frame.motor_arm.2"
+      },
+      {
+        "slug": "frame.motor_arm.3"
+      }
+    ]
+  },
+  {
+    "slug": "mari.06",
+    "symbols": [
+      {
+        "slug": "step"
+      },
+      {
+        "slug": "tool.hex_2_0"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "LENGTH",
+            "text": "Make sure to use 18mm bolts (not 16mm)."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "frame.bolt_m3_18.0"
+          },
+          {
+            "active": true,
+            "literal": "frame.bolt_m3_18.1"
+          },
+          {
+            "active": true,
+            "literal": "frame.bolt_m3_18.2"
+          },
+          {
+            "active": true,
+            "literal": "frame.bolt_m3_18.3"
+          },
+          {
+            "active": true,
+            "literal": "frame.bolt_m3_16.4"
+          },
+          {
+            "active": true,
+            "literal": "frame.bolt_m3_16.5"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/908753982ca2.webp",
+          "manual/0f60c7a91ed5.webp",
+          "manual/9564b17767bd.webp",
+          "manual/5b0f7ec0c436.webp"
+        ],
+        "lines": [
+          {
+            "text": "Insert 4x 18mm bolts."
+          },
+          {
+            "text": "Note: there is no thread there. Just insert bolts until the end."
+          },
+          {
+            "text": "Thread 2x remaining 16mm bolts."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Frame Assembly.",
+        "name": "The 18mm bolts and the last two 16mm"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.721,
+            0.3,
+            0.723
+          ],
+          "target": [
+            0.4209,
+            0.02,
+            0.4226
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "frame.bolt_m3_16.4"
+      },
+      {
+        "slug": "frame.bolt_m3_16.5"
+      },
+      {
+        "slug": "frame.bolt_m3_18.0"
+      },
+      {
+        "slug": "frame.bolt_m3_18.1"
+      },
+      {
+        "slug": "frame.bolt_m3_18.2"
+      },
+      {
+        "slug": "frame.bolt_m3_18.3"
+      }
+    ]
+  },
+  {
+    "slug": "mari.07",
+    "symbols": [
+      {
+        "slug": "step"
+      },
+      {
+        "slug": "tool.jig"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "TIP",
+            "text": "Use the 3D printed helper to hold 4 bolts."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "frame.standoff.0"
+          },
+          {
+            "active": true,
+            "literal": "frame.standoff.1"
+          },
+          {
+            "active": true,
+            "literal": "frame.standoff.2"
+          },
+          {
+            "active": true,
+            "literal": "frame.standoff.3"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/44f5b4027630.webp",
+          "manual/3e6b926ad299.webp",
+          "manual/169e2fa2faca.webp"
+        ],
+        "lines": [
+          {
+            "text": "Flop the frame upside down."
+          },
+          {
+            "text": "Thread and tighten stands with 18mm screws sticking above the top side of the middle plate."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Frame Assembly.",
+        "name": "Flip the frame, thread the stack standoffs"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.721,
+            0.3,
+            0.723
+          ],
+          "target": [
+            0.4209,
+            0.02,
+            0.4226
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "frame.standoff.0"
+      },
+      {
+        "slug": "frame.standoff.1"
+      },
+      {
+        "slug": "frame.standoff.2"
+      },
+      {
+        "slug": "frame.standoff.3"
+      }
+    ]
+  },
+  {
+    "slug": "mari.08",
+    "symbols": [
+      {
+        "slug": "step"
+      },
+      {
+        "slug": "tool.hex_2_0"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "LENGTH",
+            "text": "Check that bolts don’t stick out of the nut more than 1mm (see pictures). If they’re sticking out too much, this means that wrong bolts had been used, and it should be fixed."
+          },
+          {
+            "kind": "TIGHT",
+            "text": "Tighten firmly."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "frame.standoff.4"
+          },
+          {
+            "active": true,
+            "literal": "frame.standoff.5"
+          },
+          {
+            "active": true,
+            "literal": "frame.standoff.6"
+          },
+          {
+            "active": true,
+            "literal": "frame.standoff.7"
+          },
+          {
+            "active": true,
+            "literal": "frame.bolt_m3_8.0"
+          },
+          {
+            "active": true,
+            "literal": "frame.bolt_m3_8.1"
+          },
+          {
+            "active": true,
+            "literal": "frame.bolt_m3_8.2"
+          },
+          {
+            "active": true,
+            "literal": "frame.bolt_m3_8.3"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/54c17ea5bc94.webp",
+          "manual/213c025950f7.webp",
+          "manual/8a8a98b2c14d.webp"
+        ],
+        "lines": [
+          {
+            "text": "Tighten all 6x 16mm bolts firmly."
+          },
+          {
+            "text": "Prepare M3 screws 8mm 4x, standoffs 4x, screwdriver Hex 2.0."
+          },
+          {
+            "text": "Tighten remaining 4x standoffs to the corners of the middle plate using 8mm bolts."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Frame Assembly.",
+        "name": "Tighten the 16mm bolts, add the corner standoffs"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.721,
+            0.3,
+            0.723
+          ],
+          "target": [
+            0.4209,
+            0.02,
+            0.4226
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "frame.bolt_m3_8.0"
+      },
+      {
+        "slug": "frame.bolt_m3_8.1"
+      },
+      {
+        "slug": "frame.bolt_m3_8.2"
+      },
+      {
+        "slug": "frame.bolt_m3_8.3"
+      },
+      {
+        "slug": "frame.standoff.4"
+      },
+      {
+        "slug": "frame.standoff.5"
+      },
+      {
+        "slug": "frame.standoff.6"
+      },
+      {
+        "slug": "frame.standoff.7"
+      }
+    ]
+  },
+  {
+    "slug": "mari.09",
+    "symbols": [
+      {
+        "slug": "step"
+      },
+      {
+        "slug": "tool.hex_2_0"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "MAGNET",
+            "text": "Attention! The motor has powerful magnets inside of it. Make sure to keep them away from anything that can get attracted and stick to them — bolts, nuts, tools, etc."
+          },
+          {
+            "kind": "LENGTH",
+            "text": "When the screw comes out of the beam and is screwed into the motor, it must reach the end of the motor base and not touch the winding."
+          },
+          {
+            "kind": "LENGTH",
+            "text": "The screw should extend approx. 3mm through the arm."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": []
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/7a51e1d48932.webp",
+          "manual/3b2068978349.webp"
+        ],
+        "lines": [
+          {
+            "text": "Open the package that comes with the motor. Use 4x 10mm bolts and one big nut for the motor."
+          },
+          {
+            "text": "Before installing the motors, we need to make sure that the bolts are the right length. For a 10” drone, it's a 10mm bolt."
+          },
+          {
+            "text": "We need to make sure that they do not touch the motor windings, and at the same time hold the motors firmly."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Installation of motors.",
+        "name": "Check the motor bolts"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.471,
+            0.57,
+            0.723
+          ],
+          "target": [
+            0.4209,
+            0.02,
+            0.4226
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ]
+  },
+  {
+    "slug": "mari.10",
+    "symbols": [
+      {
+        "slug": "step"
+      },
+      {
+        "slug": "tool.hex_2_0"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "ORIENTATION",
+            "text": "Pay attention to motors and cables orientation."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "drive.motor.0"
+          },
+          {
+            "active": true,
+            "literal": "drive.prop_nut_m5.0"
+          },
+          {
+            "active": true,
+            "literal": "drive.bolt_m3_10.0"
+          },
+          {
+            "active": true,
+            "literal": "drive.bolt_m3_10.1"
+          },
+          {
+            "active": true,
+            "literal": "drive.bolt_m3_10.2"
+          },
+          {
+            "active": true,
+            "literal": "drive.bolt_m3_10.3"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/0de99034f993.webp",
+          "manual/8571933e5965.webp",
+          "manual/c485cb3e99c6.webp",
+          "manual/86cd2af99fb4.webp",
+          "manual/a88f6a687044.webp"
+        ],
+        "lines": [
+          {
+            "text": "Screw the nut onto the motor by hand. Do not tighten it."
+          },
+          {
+            "text": "Screw and tighten all 4 bolts for one motor."
+          },
+          {
+            "text": "Please don’t glue motors to the frame yet."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Installation of motors.",
+        "name": "The first motor"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.471,
+            0.57,
+            0.723
+          ],
+          "target": [
+            0.4209,
+            0.02,
+            0.4226
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "drive.bolt_m3_10.0"
+      },
+      {
+        "slug": "drive.bolt_m3_10.1"
+      },
+      {
+        "slug": "drive.bolt_m3_10.2"
+      },
+      {
+        "slug": "drive.bolt_m3_10.3"
+      },
+      {
+        "slug": "drive.motor.0"
+      },
+      {
+        "slug": "drive.prop_nut_m5.0"
+      }
+    ]
+  },
+  {
+    "slug": "mari.11",
+    "symbols": [
+      {
+        "slug": "step"
+      },
+      {
+        "slug": "tool.hex_2_0"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "ORIENTATION",
+            "text": "Pay attention to motors and cables orientation."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "drive.motor.1"
+          },
+          {
+            "active": true,
+            "literal": "drive.motor.2"
+          },
+          {
+            "active": true,
+            "literal": "drive.motor.3"
+          },
+          {
+            "active": true,
+            "literal": "drive.prop_nut_m5.1"
+          },
+          {
+            "active": true,
+            "literal": "drive.prop_nut_m5.2"
+          },
+          {
+            "active": true,
+            "literal": "drive.prop_nut_m5.3"
+          },
+          {
+            "active": true,
+            "literal": "drive.bolt_m3_10.4"
+          },
+          {
+            "active": true,
+            "literal": "drive.bolt_m3_10.5"
+          },
+          {
+            "active": true,
+            "literal": "drive.bolt_m3_10.6"
+          },
+          {
+            "active": true,
+            "literal": "drive.bolt_m3_10.7"
+          },
+          {
+            "active": true,
+            "literal": "drive.bolt_m3_10.8"
+          },
+          {
+            "active": true,
+            "literal": "drive.bolt_m3_10.9"
+          },
+          {
+            "active": true,
+            "literal": "drive.bolt_m3_10.10"
+          },
+          {
+            "active": true,
+            "literal": "drive.bolt_m3_10.11"
+          },
+          {
+            "active": true,
+            "literal": "drive.bolt_m3_10.12"
+          },
+          {
+            "active": true,
+            "literal": "drive.bolt_m3_10.13"
+          },
+          {
+            "active": true,
+            "literal": "drive.bolt_m3_10.14"
+          },
+          {
+            "active": true,
+            "literal": "drive.bolt_m3_10.15"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/fb0273e59330.webp",
+          "manual/7e8d53ef6015.webp"
+        ],
+        "lines": [
+          {
+            "text": "Repeat steps 1–5 for all 4 motors."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Installation of motors.",
+        "name": "The other three motors"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.471,
+            0.57,
+            0.723
+          ],
+          "target": [
+            0.4209,
+            0.02,
+            0.4226
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "drive.bolt_m3_10.10"
+      },
+      {
+        "slug": "drive.bolt_m3_10.11"
+      },
+      {
+        "slug": "drive.bolt_m3_10.12"
+      },
+      {
+        "slug": "drive.bolt_m3_10.13"
+      },
+      {
+        "slug": "drive.bolt_m3_10.14"
+      },
+      {
+        "slug": "drive.bolt_m3_10.15"
+      },
+      {
+        "slug": "drive.bolt_m3_10.4"
+      },
+      {
+        "slug": "drive.bolt_m3_10.5"
+      },
+      {
+        "slug": "drive.bolt_m3_10.6"
+      },
+      {
+        "slug": "drive.bolt_m3_10.7"
+      },
+      {
+        "slug": "drive.bolt_m3_10.8"
+      },
+      {
+        "slug": "drive.bolt_m3_10.9"
+      },
+      {
+        "slug": "drive.motor.1"
+      },
+      {
+        "slug": "drive.motor.2"
+      },
+      {
+        "slug": "drive.motor.3"
+      },
+      {
+        "slug": "drive.prop_nut_m5.1"
+      },
+      {
+        "slug": "drive.prop_nut_m5.2"
+      },
+      {
+        "slug": "drive.prop_nut_m5.3"
+      }
+    ]
+  },
+  {
+    "slug": "mari.12",
+    "symbols": [
+      {
+        "slug": "step"
+      },
+      {
+        "slug": "tool.hex_2_0"
+      },
+      {
+        "slug": "tool.tweezers"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "WARNING",
+            "text": "Please note that the connectors will be needed for installing peripherals at later stages."
+          },
+          {
+            "kind": "ORIENTATION",
+            "text": "Pay attention to cable orientation. Don’t push it too hard."
+          },
+          {
+            "kind": "LENGTH",
+            "text": "There are 28mm screws in the frame set — we don’t use them."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "stack.bolt_m3_30.0"
+          },
+          {
+            "active": true,
+            "literal": "stack.bolt_m3_30.1"
+          },
+          {
+            "active": true,
+            "literal": "stack.bolt_m3_30.2"
+          },
+          {
+            "active": true,
+            "literal": "stack.bolt_m3_30.3"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/dd65b491478c.webp",
+          "manual/871ef07b242a.webp",
+          "manual/db2424299dc6.webp",
+          "manual/4fcf124b3dcb.webp"
+        ],
+        "lines": [
+          {
+            "text": "Open the package that comes with the stack: flight controller (FC), electronic speed controller (ESC), silicone grommets for FC and ESC and stack screws (30 mm), connectors for motors (not used), various connectors (FC to VTX, FC to camera, FC to ELRS), the connector between FC and ESC."
+          },
+          {
+            "text": "Connect the 8-pin cable to the ESC."
+          },
+          {
+            "text": "Take the four screws from the stack set (M3 30mm, round head) and insert them from the bottom into the bottom/mid plate and screw them into the nuts in the mid plate."
+          },
+          {
+            "text": "Tighten well."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Stack (FC & ESC).",
+        "name": "The stack bolts"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.605,
+            0.18,
+            0.603
+          ],
+          "target": [
+            0.425,
+            0.02,
+            0.4227
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "stack.bolt_m3_30.0"
+      },
+      {
+        "slug": "stack.bolt_m3_30.1"
+      },
+      {
+        "slug": "stack.bolt_m3_30.2"
+      },
+      {
+        "slug": "stack.bolt_m3_30.3"
+      }
+    ]
+  },
+  {
+    "slug": "mari.13",
+    "symbols": [
+      {
+        "slug": "step"
+      },
+      {
+        "slug": "tool.tweezers"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "ORIENTATION",
+            "text": "Pay attention to grommets orientation (longer side upwards)."
+          },
+          {
+            "kind": "TIP",
+            "text": "Use tweezers if necessary."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "stack.grommet.0"
+          },
+          {
+            "active": true,
+            "literal": "stack.grommet.1"
+          },
+          {
+            "active": true,
+            "literal": "stack.grommet.2"
+          },
+          {
+            "active": true,
+            "literal": "stack.grommet.3"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/c37ee3e32817.webp",
+          "manual/7a048e5a005a.webp",
+          "manual/645ad8d9e0e7.webp",
+          "manual/b392d5885d18.webp"
+        ],
+        "lines": [
+          {
+            "text": "Place 4 silicone grommets on the 4 bolts for the stack."
+          },
+          {
+            "text": "Insert silicone grommets into the holes on the ESC: squeeze the silicone grommets from both sides, insert one side into the hole, adjust so that the silicone grommet is completely in place."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Stack (FC & ESC).",
+        "name": "Grommets on the stack bolts"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.605,
+            0.18,
+            0.603
+          ],
+          "target": [
+            0.425,
+            0.02,
+            0.4227
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "stack.grommet.0"
+      },
+      {
+        "slug": "stack.grommet.1"
+      },
+      {
+        "slug": "stack.grommet.2"
+      },
+      {
+        "slug": "stack.grommet.3"
+      }
+    ]
+  },
+  {
+    "slug": "mari.14",
+    "symbols": [
+      {
+        "slug": "step"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "WIRES",
+            "text": "Make sure motor cables are aligned as on the photo."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "stack.esc.0"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/24b25dbe9a4b.webp",
+          "manual/f5e7e808a2cf.webp"
+        ],
+        "lines": [
+          {
+            "text": "Slide 4 silicone grommets into the ESC's holes and then install the ESC on the frame."
+          },
+          {
+            "text": "The green grommets allow the FC and ESC to be installed in such a way that they isolate the stack from vibrations from the propellers during the flight."
+          },
+          {
+            "text": "Place the ESC with the power cables towards the antennas."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Stack (FC & ESC).",
+        "name": "The ESC"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.605,
+            0.18,
+            0.603
+          ],
+          "target": [
+            0.425,
+            0.02,
+            0.4227
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "stack.esc.0"
+      }
+    ]
+  },
+  {
+    "slug": "mari.15",
+    "symbols": [
+      {
+        "slug": "step"
+      },
+      {
+        "slug": "tool.tweezers"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "ORIENTATION",
+            "text": "Pay attention to grommets orientation (longer side downwards)."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "drive.motor_wire.0"
+          },
+          {
+            "active": true,
+            "literal": "drive.motor_wire.1"
+          },
+          {
+            "active": true,
+            "literal": "drive.motor_wire.2"
+          },
+          {
+            "active": true,
+            "literal": "drive.motor_wire.3"
+          },
+          {
+            "active": true,
+            "literal": "stack.grommet.4"
+          },
+          {
+            "active": true,
+            "literal": "stack.grommet.5"
+          },
+          {
+            "active": true,
+            "literal": "stack.grommet.6"
+          },
+          {
+            "active": true,
+            "literal": "stack.grommet.7"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/fb96fc1c7365.webp",
+          "manual/1d216555bc7c.webp",
+          "manual/bf99322459e6.webp"
+        ],
+        "lines": [
+          {
+            "text": "Connect the four motor connectors with the ESC connectors by just plugging them in."
+          },
+          {
+            "text": "It is important to avoid dangling wires."
+          },
+          {
+            "text": "Wrap the motor wires around the stands once."
+          },
+          {
+            "text": "Make sure to use the nearest motor outputs when connecting each motor."
+          },
+          {
+            "text": "Insert silicone grommets into the holes on the FC."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Stack (FC & ESC).",
+        "name": "Motor wires, grommets for the FC"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.605,
+            0.18,
+            0.603
+          ],
+          "target": [
+            0.425,
+            0.02,
+            0.4227
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "drive.motor_wire.0"
+      },
+      {
+        "slug": "drive.motor_wire.1"
+      },
+      {
+        "slug": "drive.motor_wire.2"
+      },
+      {
+        "slug": "drive.motor_wire.3"
+      },
+      {
+        "slug": "stack.grommet.4"
+      },
+      {
+        "slug": "stack.grommet.5"
+      },
+      {
+        "slug": "stack.grommet.6"
+      },
+      {
+        "slug": "stack.grommet.7"
+      }
+    ]
+  },
+  {
+    "slug": "mari.16",
+    "symbols": [
+      {
+        "slug": "step"
+      },
+      {
+        "slug": "tool.hex_5_5"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "ORIENTATION",
+            "text": "Arrow must be pointing to the front (camera side)."
+          },
+          {
+            "kind": "TIGHT",
+            "text": "Don’t overtighten it, don’t keep it too loose."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "stack.fc.0"
+          },
+          {
+            "active": true,
+            "literal": "stack.locknut_m3.0"
+          },
+          {
+            "active": true,
+            "literal": "stack.locknut_m3.1"
+          },
+          {
+            "active": true,
+            "literal": "stack.locknut_m3.2"
+          },
+          {
+            "active": true,
+            "literal": "stack.locknut_m3.3"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/61bb4ea1f766.webp",
+          "manual/3715301b424e.webp",
+          "manual/28beb3d06ae4.webp"
+        ],
+        "lines": [
+          {
+            "text": "Get the metal locknuts from the stack package; nutdriver Hex 5.5."
+          },
+          {
+            "text": "On top of the ESC, place the FC as in the photo."
+          },
+          {
+            "text": "Secure the FC and ESC in place with the four metal locknuts that come with the stack."
+          },
+          {
+            "text": "Tighten the stack so that it stands straight, but leave enough flexibility for the silicone to compress and absorb vibrations."
+          },
+          {
+            "text": "The locknuts must be on the level with nuts."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Stack (FC & ESC).",
+        "name": "The FC and the locknuts"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.605,
+            0.18,
+            0.603
+          ],
+          "target": [
+            0.425,
+            0.02,
+            0.4227
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "stack.fc.0"
+      },
+      {
+        "slug": "stack.locknut_m3.0"
+      },
+      {
+        "slug": "stack.locknut_m3.1"
+      },
+      {
+        "slug": "stack.locknut_m3.2"
+      },
+      {
+        "slug": "stack.locknut_m3.3"
+      }
+    ]
+  },
+  {
+    "slug": "mari.17",
+    "symbols": [
+      {
+        "slug": "step"
+      },
+      {
+        "slug": "tool.tweezers"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "ORIENTATION",
+            "text": "Pay attention to cable orientation. Don’t push it too hard."
+          },
+          {
+            "kind": "TIP",
+            "text": "Use tweezers if necessary."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "stack.cable_esc_fc.0"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/48bc8ecb5fc2.webp",
+          "manual/67c1f4a8fc76.webp"
+        ],
+        "lines": [
+          {
+            "text": "Check that all the bolts on the bottom of the board are tightened."
+          },
+          {
+            "text": "Connect the 8-pin cable between the ESC and the FC."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Stack (FC & ESC).",
+        "name": "ESC to FC"
+      },
+      "STAGED": {
+        "camera": {
+          "position": [
+            0.605,
+            0.18,
+            0.603
+          ],
+          "target": [
+            0.425,
+            0.02,
+            0.4227
+          ]
+        },
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "stack.cable_esc_fc.0"
+      }
+    ]
+  },
+  {
+    "slug": "mari.18",
+    "symbols": [
+      {
+        "slug": "step"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": []
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "tail.tail_half_a.0"
+          },
+          {
+            "active": true,
+            "literal": "tail.tail_half_b.0"
+          },
+          {
+            "active": true,
+            "literal": "tail.hinge.0"
+          },
+          {
+            "active": true,
+            "literal": "tail.hinge.1"
+          },
+          {
+            "active": true,
+            "literal": "tail.hinge.2"
+          },
+          {
+            "active": true,
+            "literal": "tail.hinge.3"
+          },
+          {
+            "active": true,
+            "literal": "tail.antenna_cover.0"
+          },
+          {
+            "active": true,
+            "literal": "tail.antenna_cover.1"
+          },
+          {
+            "active": true,
+            "literal": "tail.antenna_cover.2"
+          },
+          {
+            "active": true,
+            "literal": "tail.antenna_cover.3"
+          },
+          {
+            "active": true,
+            "literal": "tail.antenna_standoff.0"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [],
+        "lines": [
+          {
+            "text": "Join the two tail halves with the four hinges, fit the antenna covers and the standoff."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Tail + ELRS.",
+        "name": "The printed tail"
+      },
+      "STAGED": {
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "tail.antenna_cover.0"
+      },
+      {
+        "slug": "tail.antenna_cover.1"
+      },
+      {
+        "slug": "tail.antenna_cover.2"
+      },
+      {
+        "slug": "tail.antenna_cover.3"
+      },
+      {
+        "slug": "tail.antenna_standoff.0"
+      },
+      {
+        "slug": "tail.hinge.0"
+      },
+      {
+        "slug": "tail.hinge.1"
+      },
+      {
+        "slug": "tail.hinge.2"
+      },
+      {
+        "slug": "tail.hinge.3"
+      },
+      {
+        "slug": "tail.tail_half_a.0"
+      },
+      {
+        "slug": "tail.tail_half_b.0"
+      }
+    ]
+  },
+  {
+    "slug": "mari.19",
+    "symbols": [
+      {
+        "slug": "step"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": []
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "vtx_mount.vtx_spacer.0"
+          },
+          {
+            "active": true,
+            "literal": "vtx_mount.pigtail_holder.0"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [],
+        "lines": [
+          {
+            "text": "Seat the VTX spacer and the pigtail holder."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Camera + VTX.",
+        "name": "The VTX mount"
+      },
+      "STAGED": {
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "vtx_mount.pigtail_holder.0"
+      },
+      {
+        "slug": "vtx_mount.vtx_spacer.0"
+      }
+    ]
+  },
+  {
+    "slug": "mari.20",
+    "symbols": [
+      {
+        "slug": "step"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": []
+      },
+      "ASSEMBLED": {
+        "placements": [
+          {
+            "active": true,
+            "literal": "head.head_shell.0"
+          },
+          {
+            "active": true,
+            "literal": "head.lens_cover.0"
+          }
+        ]
+      },
+      "INSTRUCTED": {
+        "images": [],
+        "lines": [
+          {
+            "text": "Fit the lens cover on the head shell."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Camera + VTX.",
+        "name": "The head"
+      },
+      "STAGED": {
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ],
+    "uses": [
+      {
+        "slug": "head.head_shell.0"
+      },
+      {
+        "slug": "head.lens_cover.0"
+      }
+    ]
+  },
+  {
+    "slug": "quadrocopter.01",
+    "symbols": [
+      {
+        "slug": "step"
+      },
+      {
+        "slug": "tool.bolt_organizer"
+      },
+      {
+        "slug": "tool.screw_gauge"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "LENGTH",
+            "text": "Look for 30mm bolts in the stack set, 12mm in the additional package."
+          },
+          {
+            "kind": "TIP",
             "text": "Use a magnetic bolt organizer."
           }
         ]
@@ -83,7 +2061,7 @@ export default [
     ]
   },
   {
-    "slug": "droneaid.02",
+    "slug": "quadrocopter.02",
     "symbols": [
       {
         "slug": "step"
@@ -100,7 +2078,7 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.frame_root.0"
+            "literal": "frame.frame_root.0"
           }
         ]
       },
@@ -153,12 +2131,12 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.frame_root.0"
+        "slug": "frame.frame_root.0"
       }
     ]
   },
   {
-    "slug": "droneaid.03",
+    "slug": "quadrocopter.03",
     "symbols": [
       {
         "slug": "step"
@@ -171,10 +2149,7 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.loose"
-            ],
+            "kind": "LOOSE",
             "text": "Don’t tighten it yet! Leave it loose."
           }
         ]
@@ -183,15 +2158,15 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.motor_arm.0"
+            "literal": "frame.motor_arm.0"
           },
           {
             "active": true,
-            "literal": "drone.frame_bottom.0"
+            "literal": "frame.frame_bottom.0"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_16.0"
+            "literal": "frame.bolt_m3_16.0"
           }
         ]
       },
@@ -239,18 +2214,18 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.bolt_m3_16.0"
+        "slug": "frame.bolt_m3_16.0"
       },
       {
-        "slug": "drone.frame_bottom.0"
+        "slug": "frame.frame_bottom.0"
       },
       {
-        "slug": "drone.motor_arm.0"
+        "slug": "frame.motor_arm.0"
       }
     ]
   },
   {
-    "slug": "droneaid.04",
+    "slug": "quadrocopter.04",
     "symbols": [
       {
         "slug": "step"
@@ -263,10 +2238,7 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.loose"
-            ],
+            "kind": "LOOSE",
             "text": "Don’t tighten it yet! Leave it loose."
           }
         ]
@@ -275,11 +2247,11 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.motor_arm.1"
+            "literal": "frame.motor_arm.1"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_16.1"
+            "literal": "frame.bolt_m3_16.1"
           }
         ]
       },
@@ -328,15 +2300,15 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.bolt_m3_16.1"
+        "slug": "frame.bolt_m3_16.1"
       },
       {
-        "slug": "drone.motor_arm.1"
+        "slug": "frame.motor_arm.1"
       }
     ]
   },
   {
-    "slug": "droneaid.05",
+    "slug": "quadrocopter.05",
     "symbols": [
       {
         "slug": "step"
@@ -349,10 +2321,7 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.loose"
-            ],
+            "kind": "LOOSE",
             "text": "Don’t tighten it yet! Leave it loose."
           }
         ]
@@ -361,19 +2330,19 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.motor_arm.2"
+            "literal": "frame.motor_arm.2"
           },
           {
             "active": true,
-            "literal": "drone.motor_arm.3"
+            "literal": "frame.motor_arm.3"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_16.2"
+            "literal": "frame.bolt_m3_16.2"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_16.3"
+            "literal": "frame.bolt_m3_16.3"
           }
         ]
       },
@@ -418,21 +2387,21 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.bolt_m3_16.2"
+        "slug": "frame.bolt_m3_16.2"
       },
       {
-        "slug": "drone.bolt_m3_16.3"
+        "slug": "frame.bolt_m3_16.3"
       },
       {
-        "slug": "drone.motor_arm.2"
+        "slug": "frame.motor_arm.2"
       },
       {
-        "slug": "drone.motor_arm.3"
+        "slug": "frame.motor_arm.3"
       }
     ]
   },
   {
-    "slug": "droneaid.06",
+    "slug": "quadrocopter.06",
     "symbols": [
       {
         "slug": "step"
@@ -445,10 +2414,7 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.length"
-            ],
+            "kind": "LENGTH",
             "text": "Make sure to use 18mm bolts (not 16mm)."
           }
         ]
@@ -457,27 +2423,27 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.bolt_m3_18.0"
+            "literal": "frame.bolt_m3_18.0"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_18.1"
+            "literal": "frame.bolt_m3_18.1"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_18.2"
+            "literal": "frame.bolt_m3_18.2"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_18.3"
+            "literal": "frame.bolt_m3_18.3"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_16.4"
+            "literal": "frame.bolt_m3_16.4"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_16.5"
+            "literal": "frame.bolt_m3_16.5"
           }
         ]
       },
@@ -529,27 +2495,27 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.bolt_m3_16.4"
+        "slug": "frame.bolt_m3_16.4"
       },
       {
-        "slug": "drone.bolt_m3_16.5"
+        "slug": "frame.bolt_m3_16.5"
       },
       {
-        "slug": "drone.bolt_m3_18.0"
+        "slug": "frame.bolt_m3_18.0"
       },
       {
-        "slug": "drone.bolt_m3_18.1"
+        "slug": "frame.bolt_m3_18.1"
       },
       {
-        "slug": "drone.bolt_m3_18.2"
+        "slug": "frame.bolt_m3_18.2"
       },
       {
-        "slug": "drone.bolt_m3_18.3"
+        "slug": "frame.bolt_m3_18.3"
       }
     ]
   },
   {
-    "slug": "droneaid.07",
+    "slug": "quadrocopter.07",
     "symbols": [
       {
         "slug": "step"
@@ -562,9 +2528,7 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.tip"
-            ],
+            "kind": "TIP",
             "text": "Use the 3D printed helper to hold 4 bolts."
           }
         ]
@@ -573,19 +2537,19 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.standoff.0"
+            "literal": "frame.standoff.0"
           },
           {
             "active": true,
-            "literal": "drone.standoff.1"
+            "literal": "frame.standoff.1"
           },
           {
             "active": true,
-            "literal": "drone.standoff.2"
+            "literal": "frame.standoff.2"
           },
           {
             "active": true,
-            "literal": "drone.standoff.3"
+            "literal": "frame.standoff.3"
           }
         ]
       },
@@ -633,21 +2597,21 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.standoff.0"
+        "slug": "frame.standoff.0"
       },
       {
-        "slug": "drone.standoff.1"
+        "slug": "frame.standoff.1"
       },
       {
-        "slug": "drone.standoff.2"
+        "slug": "frame.standoff.2"
       },
       {
-        "slug": "drone.standoff.3"
+        "slug": "frame.standoff.3"
       }
     ]
   },
   {
-    "slug": "droneaid.08",
+    "slug": "quadrocopter.08",
     "symbols": [
       {
         "slug": "step"
@@ -660,17 +2624,11 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.length"
-            ],
+            "kind": "LENGTH",
             "text": "Check that bolts don’t stick out of the nut more than 1mm (see pictures). If they’re sticking out too much, this means that wrong bolts had been used, and it should be fixed."
           },
           {
-            "symbols": [
-              "note.warning",
-              "warn.tight"
-            ],
+            "kind": "TIGHT",
             "text": "Tighten firmly."
           }
         ]
@@ -679,35 +2637,35 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.standoff.4"
+            "literal": "frame.standoff.4"
           },
           {
             "active": true,
-            "literal": "drone.standoff.5"
+            "literal": "frame.standoff.5"
           },
           {
             "active": true,
-            "literal": "drone.standoff.6"
+            "literal": "frame.standoff.6"
           },
           {
             "active": true,
-            "literal": "drone.standoff.7"
+            "literal": "frame.standoff.7"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_8.0"
+            "literal": "frame.bolt_m3_8.0"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_8.1"
+            "literal": "frame.bolt_m3_8.1"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_8.2"
+            "literal": "frame.bolt_m3_8.2"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_8.3"
+            "literal": "frame.bolt_m3_8.3"
           }
         ]
       },
@@ -758,33 +2716,33 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.bolt_m3_8.0"
+        "slug": "frame.bolt_m3_8.0"
       },
       {
-        "slug": "drone.bolt_m3_8.1"
+        "slug": "frame.bolt_m3_8.1"
       },
       {
-        "slug": "drone.bolt_m3_8.2"
+        "slug": "frame.bolt_m3_8.2"
       },
       {
-        "slug": "drone.bolt_m3_8.3"
+        "slug": "frame.bolt_m3_8.3"
       },
       {
-        "slug": "drone.standoff.4"
+        "slug": "frame.standoff.4"
       },
       {
-        "slug": "drone.standoff.5"
+        "slug": "frame.standoff.5"
       },
       {
-        "slug": "drone.standoff.6"
+        "slug": "frame.standoff.6"
       },
       {
-        "slug": "drone.standoff.7"
+        "slug": "frame.standoff.7"
       }
     ]
   },
   {
-    "slug": "droneaid.09",
+    "slug": "quadrocopter.09",
     "symbols": [
       {
         "slug": "step"
@@ -794,10 +2752,7 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.orientation"
-            ],
+            "kind": "ORIENTATION",
             "text": "Pay attention to the front of the frame and the 3D print position."
           }
         ]
@@ -806,11 +2761,11 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.cam_holder.0"
+            "literal": "quadro.cam_holder.0"
           },
           {
             "active": true,
-            "literal": "drone.cam_holder.1"
+            "literal": "quadro.cam_holder.1"
           }
         ]
       },
@@ -857,15 +2812,15 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.cam_holder.0"
+        "slug": "quadro.cam_holder.0"
       },
       {
-        "slug": "drone.cam_holder.1"
+        "slug": "quadro.cam_holder.1"
       }
     ]
   },
   {
-    "slug": "droneaid.10",
+    "slug": "quadrocopter.10",
     "symbols": [
       {
         "slug": "step"
@@ -875,10 +2830,7 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.orientation"
-            ],
+            "kind": "ORIENTATION",
             "text": "Pay attention to the back of the frame and the 3D print position."
           }
         ]
@@ -887,7 +2839,7 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.antenna_mount.0"
+            "literal": "quadro.antenna_mount.0"
           }
         ]
       },
@@ -940,12 +2892,12 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.antenna_mount.0"
+        "slug": "quadro.antenna_mount.0"
       }
     ]
   },
   {
-    "slug": "droneaid.11",
+    "slug": "quadrocopter.11",
     "symbols": [
       {
         "slug": "step"
@@ -958,24 +2910,15 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.magnet"
-            ],
+            "kind": "MAGNET",
             "text": "Attention! The motor has powerful magnets inside of it. Make sure to keep them away from anything that can get attracted and stick to them — bolts, nuts, tools, etc."
           },
           {
-            "symbols": [
-              "note.warning",
-              "warn.length"
-            ],
+            "kind": "LENGTH",
             "text": "When the screw comes out of the beam and is screwed into the motor, it must reach the end of the motor base and not touch the winding."
           },
           {
-            "symbols": [
-              "note.warning",
-              "warn.length"
-            ],
+            "kind": "LENGTH",
             "text": "The screw should extend approx. 3mm through the arm."
           }
         ]
@@ -1029,7 +2972,7 @@ export default [
     ]
   },
   {
-    "slug": "droneaid.12",
+    "slug": "quadrocopter.12",
     "symbols": [
       {
         "slug": "step"
@@ -1042,10 +2985,7 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.orientation"
-            ],
+            "kind": "ORIENTATION",
             "text": "Pay attention to motors and cables orientation."
           }
         ]
@@ -1054,27 +2994,27 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.motor.0"
+            "literal": "drive.motor.0"
           },
           {
             "active": true,
-            "literal": "drone.prop_nut_m5.0"
+            "literal": "drive.prop_nut_m5.0"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_10.0"
+            "literal": "drive.bolt_m3_10.0"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_10.1"
+            "literal": "drive.bolt_m3_10.1"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_10.2"
+            "literal": "drive.bolt_m3_10.2"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_10.3"
+            "literal": "drive.bolt_m3_10.3"
           }
         ]
       },
@@ -1127,27 +3067,27 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.bolt_m3_10.0"
+        "slug": "drive.bolt_m3_10.0"
       },
       {
-        "slug": "drone.bolt_m3_10.1"
+        "slug": "drive.bolt_m3_10.1"
       },
       {
-        "slug": "drone.bolt_m3_10.2"
+        "slug": "drive.bolt_m3_10.2"
       },
       {
-        "slug": "drone.bolt_m3_10.3"
+        "slug": "drive.bolt_m3_10.3"
       },
       {
-        "slug": "drone.motor.0"
+        "slug": "drive.motor.0"
       },
       {
-        "slug": "drone.prop_nut_m5.0"
+        "slug": "drive.prop_nut_m5.0"
       }
     ]
   },
   {
-    "slug": "droneaid.13",
+    "slug": "quadrocopter.13",
     "symbols": [
       {
         "slug": "step"
@@ -1160,10 +3100,7 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.orientation"
-            ],
+            "kind": "ORIENTATION",
             "text": "Pay attention to motors and cables orientation."
           }
         ]
@@ -1172,75 +3109,75 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.motor.1"
+            "literal": "drive.motor.1"
           },
           {
             "active": true,
-            "literal": "drone.motor.2"
+            "literal": "drive.motor.2"
           },
           {
             "active": true,
-            "literal": "drone.motor.3"
+            "literal": "drive.motor.3"
           },
           {
             "active": true,
-            "literal": "drone.prop_nut_m5.1"
+            "literal": "drive.prop_nut_m5.1"
           },
           {
             "active": true,
-            "literal": "drone.prop_nut_m5.2"
+            "literal": "drive.prop_nut_m5.2"
           },
           {
             "active": true,
-            "literal": "drone.prop_nut_m5.3"
+            "literal": "drive.prop_nut_m5.3"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_10.4"
+            "literal": "drive.bolt_m3_10.4"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_10.5"
+            "literal": "drive.bolt_m3_10.5"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_10.6"
+            "literal": "drive.bolt_m3_10.6"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_10.7"
+            "literal": "drive.bolt_m3_10.7"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_10.8"
+            "literal": "drive.bolt_m3_10.8"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_10.9"
+            "literal": "drive.bolt_m3_10.9"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_10.10"
+            "literal": "drive.bolt_m3_10.10"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_10.11"
+            "literal": "drive.bolt_m3_10.11"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_10.12"
+            "literal": "drive.bolt_m3_10.12"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_10.13"
+            "literal": "drive.bolt_m3_10.13"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_10.14"
+            "literal": "drive.bolt_m3_10.14"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_10.15"
+            "literal": "drive.bolt_m3_10.15"
           }
         ]
       },
@@ -1284,63 +3221,63 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.bolt_m3_10.10"
+        "slug": "drive.bolt_m3_10.10"
       },
       {
-        "slug": "drone.bolt_m3_10.11"
+        "slug": "drive.bolt_m3_10.11"
       },
       {
-        "slug": "drone.bolt_m3_10.12"
+        "slug": "drive.bolt_m3_10.12"
       },
       {
-        "slug": "drone.bolt_m3_10.13"
+        "slug": "drive.bolt_m3_10.13"
       },
       {
-        "slug": "drone.bolt_m3_10.14"
+        "slug": "drive.bolt_m3_10.14"
       },
       {
-        "slug": "drone.bolt_m3_10.15"
+        "slug": "drive.bolt_m3_10.15"
       },
       {
-        "slug": "drone.bolt_m3_10.4"
+        "slug": "drive.bolt_m3_10.4"
       },
       {
-        "slug": "drone.bolt_m3_10.5"
+        "slug": "drive.bolt_m3_10.5"
       },
       {
-        "slug": "drone.bolt_m3_10.6"
+        "slug": "drive.bolt_m3_10.6"
       },
       {
-        "slug": "drone.bolt_m3_10.7"
+        "slug": "drive.bolt_m3_10.7"
       },
       {
-        "slug": "drone.bolt_m3_10.8"
+        "slug": "drive.bolt_m3_10.8"
       },
       {
-        "slug": "drone.bolt_m3_10.9"
+        "slug": "drive.bolt_m3_10.9"
       },
       {
-        "slug": "drone.motor.1"
+        "slug": "drive.motor.1"
       },
       {
-        "slug": "drone.motor.2"
+        "slug": "drive.motor.2"
       },
       {
-        "slug": "drone.motor.3"
+        "slug": "drive.motor.3"
       },
       {
-        "slug": "drone.prop_nut_m5.1"
+        "slug": "drive.prop_nut_m5.1"
       },
       {
-        "slug": "drone.prop_nut_m5.2"
+        "slug": "drive.prop_nut_m5.2"
       },
       {
-        "slug": "drone.prop_nut_m5.3"
+        "slug": "drive.prop_nut_m5.3"
       }
     ]
   },
   {
-    "slug": "droneaid.14",
+    "slug": "quadrocopter.14",
     "symbols": [
       {
         "slug": "step"
@@ -1356,23 +3293,15 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning"
-            ],
+            "kind": "WARNING",
             "text": "Please note that the connectors will be needed for installing peripherals at later stages."
           },
           {
-            "symbols": [
-              "note.warning",
-              "warn.orientation"
-            ],
+            "kind": "ORIENTATION",
             "text": "Pay attention to cable orientation. Don’t push it too hard."
           },
           {
-            "symbols": [
-              "note.warning",
-              "warn.length"
-            ],
+            "kind": "LENGTH",
             "text": "There are 28mm screws in the frame set — we don’t use them."
           }
         ]
@@ -1381,19 +3310,19 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.bolt_m3_30.0"
+            "literal": "stack.bolt_m3_30.0"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_30.1"
+            "literal": "stack.bolt_m3_30.1"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_30.2"
+            "literal": "stack.bolt_m3_30.2"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_30.3"
+            "literal": "stack.bolt_m3_30.3"
           }
         ]
       },
@@ -1448,21 +3377,21 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.bolt_m3_30.0"
+        "slug": "stack.bolt_m3_30.0"
       },
       {
-        "slug": "drone.bolt_m3_30.1"
+        "slug": "stack.bolt_m3_30.1"
       },
       {
-        "slug": "drone.bolt_m3_30.2"
+        "slug": "stack.bolt_m3_30.2"
       },
       {
-        "slug": "drone.bolt_m3_30.3"
+        "slug": "stack.bolt_m3_30.3"
       }
     ]
   },
   {
-    "slug": "droneaid.15",
+    "slug": "quadrocopter.15",
     "symbols": [
       {
         "slug": "step"
@@ -1475,16 +3404,11 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.orientation"
-            ],
+            "kind": "ORIENTATION",
             "text": "Pay attention to grommets orientation (longer side upwards)."
           },
           {
-            "symbols": [
-              "note.tip"
-            ],
+            "kind": "TIP",
             "text": "Use tweezers if necessary."
           }
         ]
@@ -1493,19 +3417,19 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.grommet.0"
+            "literal": "stack.grommet.0"
           },
           {
             "active": true,
-            "literal": "drone.grommet.1"
+            "literal": "stack.grommet.1"
           },
           {
             "active": true,
-            "literal": "drone.grommet.2"
+            "literal": "stack.grommet.2"
           },
           {
             "active": true,
-            "literal": "drone.grommet.3"
+            "literal": "stack.grommet.3"
           }
         ]
       },
@@ -1554,21 +3478,21 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.grommet.0"
+        "slug": "stack.grommet.0"
       },
       {
-        "slug": "drone.grommet.1"
+        "slug": "stack.grommet.1"
       },
       {
-        "slug": "drone.grommet.2"
+        "slug": "stack.grommet.2"
       },
       {
-        "slug": "drone.grommet.3"
+        "slug": "stack.grommet.3"
       }
     ]
   },
   {
-    "slug": "droneaid.16",
+    "slug": "quadrocopter.16",
     "symbols": [
       {
         "slug": "step"
@@ -1578,10 +3502,7 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.wires"
-            ],
+            "kind": "WIRES",
             "text": "Make sure motor cables are aligned as on the photo."
           }
         ]
@@ -1590,7 +3511,7 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.esc.0"
+            "literal": "stack.esc.0"
           }
         ]
       },
@@ -1640,12 +3561,12 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.esc.0"
+        "slug": "stack.esc.0"
       }
     ]
   },
   {
-    "slug": "droneaid.17",
+    "slug": "quadrocopter.17",
     "symbols": [
       {
         "slug": "step"
@@ -1658,10 +3579,7 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.orientation"
-            ],
+            "kind": "ORIENTATION",
             "text": "Pay attention to grommets orientation (longer side downwards)."
           }
         ]
@@ -1670,35 +3588,35 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.motor_wire.0"
+            "literal": "drive.motor_wire.0"
           },
           {
             "active": true,
-            "literal": "drone.motor_wire.1"
+            "literal": "drive.motor_wire.1"
           },
           {
             "active": true,
-            "literal": "drone.motor_wire.2"
+            "literal": "drive.motor_wire.2"
           },
           {
             "active": true,
-            "literal": "drone.motor_wire.3"
+            "literal": "drive.motor_wire.3"
           },
           {
             "active": true,
-            "literal": "drone.grommet.4"
+            "literal": "stack.grommet.4"
           },
           {
             "active": true,
-            "literal": "drone.grommet.5"
+            "literal": "stack.grommet.5"
           },
           {
             "active": true,
-            "literal": "drone.grommet.6"
+            "literal": "stack.grommet.6"
           },
           {
             "active": true,
-            "literal": "drone.grommet.7"
+            "literal": "stack.grommet.7"
           }
         ]
       },
@@ -1755,33 +3673,33 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.grommet.4"
+        "slug": "drive.motor_wire.0"
       },
       {
-        "slug": "drone.grommet.5"
+        "slug": "drive.motor_wire.1"
       },
       {
-        "slug": "drone.grommet.6"
+        "slug": "drive.motor_wire.2"
       },
       {
-        "slug": "drone.grommet.7"
+        "slug": "drive.motor_wire.3"
       },
       {
-        "slug": "drone.motor_wire.0"
+        "slug": "stack.grommet.4"
       },
       {
-        "slug": "drone.motor_wire.1"
+        "slug": "stack.grommet.5"
       },
       {
-        "slug": "drone.motor_wire.2"
+        "slug": "stack.grommet.6"
       },
       {
-        "slug": "drone.motor_wire.3"
+        "slug": "stack.grommet.7"
       }
     ]
   },
   {
-    "slug": "droneaid.18",
+    "slug": "quadrocopter.18",
     "symbols": [
       {
         "slug": "step"
@@ -1794,17 +3712,11 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.orientation"
-            ],
+            "kind": "ORIENTATION",
             "text": "Arrow must be pointing to the front (camera side)."
           },
           {
-            "symbols": [
-              "note.warning",
-              "warn.tight"
-            ],
+            "kind": "TIGHT",
             "text": "Don’t overtighten it, don’t keep it too loose."
           }
         ]
@@ -1813,23 +3725,23 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.fc.0"
+            "literal": "stack.fc.0"
           },
           {
             "active": true,
-            "literal": "drone.locknut_m3.0"
+            "literal": "stack.locknut_m3.0"
           },
           {
             "active": true,
-            "literal": "drone.locknut_m3.1"
+            "literal": "stack.locknut_m3.1"
           },
           {
             "active": true,
-            "literal": "drone.locknut_m3.2"
+            "literal": "stack.locknut_m3.2"
           },
           {
             "active": true,
-            "literal": "drone.locknut_m3.3"
+            "literal": "stack.locknut_m3.3"
           }
         ]
       },
@@ -1886,24 +3798,24 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.fc.0"
+        "slug": "stack.fc.0"
       },
       {
-        "slug": "drone.locknut_m3.0"
+        "slug": "stack.locknut_m3.0"
       },
       {
-        "slug": "drone.locknut_m3.1"
+        "slug": "stack.locknut_m3.1"
       },
       {
-        "slug": "drone.locknut_m3.2"
+        "slug": "stack.locknut_m3.2"
       },
       {
-        "slug": "drone.locknut_m3.3"
+        "slug": "stack.locknut_m3.3"
       }
     ]
   },
   {
-    "slug": "droneaid.19",
+    "slug": "quadrocopter.19",
     "symbols": [
       {
         "slug": "step"
@@ -1916,16 +3828,11 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.orientation"
-            ],
+            "kind": "ORIENTATION",
             "text": "Pay attention to cable orientation. Don’t push it too hard."
           },
           {
-            "symbols": [
-              "note.tip"
-            ],
+            "kind": "TIP",
             "text": "Use tweezers if necessary."
           }
         ]
@@ -1934,7 +3841,7 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.cable_esc_fc.0"
+            "literal": "stack.cable_esc_fc.0"
           }
         ]
       },
@@ -1981,12 +3888,12 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.cable_esc_fc.0"
+        "slug": "stack.cable_esc_fc.0"
       }
     ]
   },
   {
-    "slug": "droneaid.20",
+    "slug": "quadrocopter.20",
     "symbols": [
       {
         "slug": "step"
@@ -1996,17 +3903,11 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.wires"
-            ],
+            "kind": "WIRES",
             "text": "Pay attention to the colors of the wires. The cable has a different color pattern on each end."
           },
           {
-            "symbols": [
-              "note.warning",
-              "warn.wires"
-            ],
+            "kind": "WIRES",
             "text": "Choose the correct connector. Twist the cable. If you cannot do it easily, you can unscrew the FC, connect the cable, and then screw the FC back in place."
           }
         ]
@@ -2015,7 +3916,7 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.cable_vtx_fc.0"
+            "literal": "quadro.cable_vtx_fc.0"
           }
         ]
       },
@@ -2067,12 +3968,12 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.cable_vtx_fc.0"
+        "slug": "quadro.cable_vtx_fc.0"
       }
     ]
   },
   {
-    "slug": "droneaid.21",
+    "slug": "quadrocopter.21",
     "symbols": [
       {
         "slug": "step"
@@ -2082,37 +3983,23 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.force"
-            ],
+            "kind": "FORCE",
             "text": "Be careful when applying power to the pigtail while pushing it to the VTX."
           },
           {
-            "symbols": [
-              "note.warning",
-              "warn.orientation"
-            ],
+            "kind": "ORIENTATION",
             "text": "Position the cable to look upwards."
           },
           {
-            "symbols": [
-              "note.warning"
-            ],
+            "kind": "WARNING",
             "text": "Don’t use the metal washer (just the metal ring and nut)."
           },
           {
-            "symbols": [
-              "note.warning",
-              "warn.force"
-            ],
+            "kind": "FORCE",
             "text": "Be careful with the pigtail's cable, don’t bend it too much."
           },
           {
-            "symbols": [
-              "note.warning",
-              "warn.orientation"
-            ],
+            "kind": "ORIENTATION",
             "text": "Pay attention to the mount position. The pigtail should look upward."
           }
         ]
@@ -2121,7 +4008,7 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.vtx_pigtail.0"
+            "literal": "quadro.vtx_pigtail.0"
           }
         ]
       },
@@ -2175,12 +4062,12 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.vtx_pigtail.0"
+        "slug": "quadro.vtx_pigtail.0"
       }
     ]
   },
   {
-    "slug": "droneaid.22",
+    "slug": "quadrocopter.22",
     "symbols": [
       {
         "slug": "step"
@@ -2193,10 +4080,7 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.orientation"
-            ],
+            "kind": "ORIENTATION",
             "text": "Position the zip-tie the way it’ll not overlap with the button, pushing it."
           }
         ]
@@ -2205,19 +4089,19 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.vtx.0"
+            "literal": "quadro.vtx.0"
           },
           {
             "active": true,
-            "literal": "drone.thermo_adhesive.0"
+            "literal": "quadro.thermo_adhesive.0"
           },
           {
             "active": true,
-            "literal": "drone.zip_tie.0"
+            "literal": "quadro.zip_tie.0"
           },
           {
             "active": true,
-            "literal": "drone.zip_tie.1"
+            "literal": "quadro.zip_tie.1"
           }
         ]
       },
@@ -2269,21 +4153,21 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.thermo_adhesive.0"
+        "slug": "quadro.thermo_adhesive.0"
       },
       {
-        "slug": "drone.vtx.0"
+        "slug": "quadro.vtx.0"
       },
       {
-        "slug": "drone.zip_tie.0"
+        "slug": "quadro.zip_tie.0"
       },
       {
-        "slug": "drone.zip_tie.1"
+        "slug": "quadro.zip_tie.1"
       }
     ]
   },
   {
-    "slug": "droneaid.23",
+    "slug": "quadrocopter.23",
     "symbols": [
       {
         "slug": "step"
@@ -2297,7 +4181,7 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.antenna_rx.1"
+            "literal": "quadro.antenna_rx.1"
           }
         ]
       },
@@ -2350,12 +4234,12 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.antenna_rx.1"
+        "slug": "quadro.antenna_rx.1"
       }
     ]
   },
   {
-    "slug": "droneaid.24",
+    "slug": "quadrocopter.24",
     "symbols": [
       {
         "slug": "step"
@@ -2365,17 +4249,11 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.wires"
-            ],
+            "kind": "WIRES",
             "text": "Pay attention to the colors of the wires."
           },
           {
-            "symbols": [
-              "note.warning",
-              "warn.force"
-            ],
+            "kind": "FORCE",
             "text": "Be careful with the pressing force. You should feel a click."
           }
         ]
@@ -2384,23 +4262,23 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.antenna_rx.0"
+            "literal": "quadro.antenna_rx.0"
           },
           {
             "active": true,
-            "literal": "drone.tail_mount.0"
+            "literal": "quadro.tail_mount.0"
           },
           {
             "active": true,
-            "literal": "drone.rx.0"
+            "literal": "quadro.rx.0"
           },
           {
             "active": true,
-            "literal": "drone.cable_rx.0"
+            "literal": "quadro.cable_rx.0"
           },
           {
             "active": true,
-            "literal": "drone.heat_shrink.0"
+            "literal": "quadro.heat_shrink.0"
           }
         ]
       },
@@ -2457,24 +4335,24 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.antenna_rx.0"
+        "slug": "quadro.antenna_rx.0"
       },
       {
-        "slug": "drone.cable_rx.0"
+        "slug": "quadro.cable_rx.0"
       },
       {
-        "slug": "drone.heat_shrink.0"
+        "slug": "quadro.heat_shrink.0"
       },
       {
-        "slug": "drone.rx.0"
+        "slug": "quadro.rx.0"
       },
       {
-        "slug": "drone.tail_mount.0"
+        "slug": "quadro.tail_mount.0"
       }
     ]
   },
   {
-    "slug": "droneaid.25",
+    "slug": "quadrocopter.25",
     "symbols": [
       {
         "slug": "step"
@@ -2487,10 +4365,7 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.orientation"
-            ],
+            "kind": "ORIENTATION",
             "text": "The camera should be in the most forward position."
           }
         ]
@@ -2499,11 +4374,11 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.bolt_m2_4.0"
+            "literal": "quadro.bolt_m2_4.0"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m2_4.1"
+            "literal": "quadro.bolt_m2_4.1"
           }
         ]
       },
@@ -2550,15 +4425,15 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.bolt_m2_4.0"
+        "slug": "quadro.bolt_m2_4.0"
       },
       {
-        "slug": "drone.bolt_m2_4.1"
+        "slug": "quadro.bolt_m2_4.1"
       }
     ]
   },
   {
-    "slug": "droneaid.26",
+    "slug": "quadrocopter.26",
     "symbols": [
       {
         "slug": "step"
@@ -2575,7 +4450,7 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.camera.0"
+            "literal": "quadro.camera.0"
           }
         ]
       },
@@ -2621,12 +4496,12 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.camera.0"
+        "slug": "quadro.camera.0"
       }
     ]
   },
   {
-    "slug": "droneaid.27",
+    "slug": "quadrocopter.27",
     "symbols": [
       {
         "slug": "step"
@@ -2640,7 +4515,7 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.cable_camera.0"
+            "literal": "quadro.cable_camera.0"
           }
         ]
       },
@@ -2684,12 +4559,12 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.cable_camera.0"
+        "slug": "quadro.cable_camera.0"
       }
     ]
   },
   {
-    "slug": "droneaid.28",
+    "slug": "quadrocopter.28",
     "symbols": [
       {
         "slug": "step"
@@ -2705,31 +4580,19 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.wires"
-            ],
+            "kind": "WIRES",
             "text": "Be careful not to damage wires while screwing the top plate."
           },
           {
-            "symbols": [
-              "note.warning",
-              "warn.wires"
-            ],
+            "kind": "WIRES",
             "text": "Let the power wires go on the side of the drone (not through the top plate)."
           },
           {
-            "symbols": [
-              "note.warning",
-              "warn.wires"
-            ],
+            "kind": "WIRES",
             "text": "Lock the power cable with a zip tie from the right side when looking at the front of the drone."
           },
           {
-            "symbols": [
-              "note.warning",
-              "warn.length"
-            ],
+            "kind": "LENGTH",
             "text": "For the dual-antenna (diversity) version you will need one 12mm bolt."
           }
         ]
@@ -2738,43 +4601,43 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.frame_top.0"
+            "literal": "top.frame_top.0"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_8.4"
+            "literal": "top.bolt_m3_8.4"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_8.5"
+            "literal": "top.bolt_m3_8.5"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_8.6"
+            "literal": "top.bolt_m3_8.6"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_8.7"
+            "literal": "top.bolt_m3_8.7"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_8.8"
+            "literal": "top.bolt_m3_8.8"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_8.9"
+            "literal": "top.bolt_m3_8.9"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_8.10"
+            "literal": "top.bolt_m3_8.10"
           },
           {
             "active": true,
-            "literal": "drone.bolt_m3_8.11"
+            "literal": "top.bolt_m3_8.11"
           },
           {
             "active": true,
-            "literal": "drone.zip_tie.2"
+            "literal": "quadro.zip_tie.2"
           }
         ]
       },
@@ -2824,39 +4687,39 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.bolt_m3_8.10"
+        "slug": "quadro.zip_tie.2"
       },
       {
-        "slug": "drone.bolt_m3_8.11"
+        "slug": "top.bolt_m3_8.10"
       },
       {
-        "slug": "drone.bolt_m3_8.4"
+        "slug": "top.bolt_m3_8.11"
       },
       {
-        "slug": "drone.bolt_m3_8.5"
+        "slug": "top.bolt_m3_8.4"
       },
       {
-        "slug": "drone.bolt_m3_8.6"
+        "slug": "top.bolt_m3_8.5"
       },
       {
-        "slug": "drone.bolt_m3_8.7"
+        "slug": "top.bolt_m3_8.6"
       },
       {
-        "slug": "drone.bolt_m3_8.8"
+        "slug": "top.bolt_m3_8.7"
       },
       {
-        "slug": "drone.bolt_m3_8.9"
+        "slug": "top.bolt_m3_8.8"
       },
       {
-        "slug": "drone.frame_top.0"
+        "slug": "top.bolt_m3_8.9"
       },
       {
-        "slug": "drone.zip_tie.2"
+        "slug": "top.frame_top.0"
       }
     ]
   },
   {
-    "slug": "droneaid.29",
+    "slug": "quadrocopter.29",
     "symbols": [
       {
         "slug": "step"
@@ -2869,9 +4732,7 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning"
-            ],
+            "kind": "WARNING",
             "text": "Make sure there are no sharp edges left after cutting zip-ties."
           }
         ]
@@ -2880,7 +4741,7 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.zip_tie.3"
+            "literal": "quadro.zip_tie.3"
           }
         ]
       },
@@ -2929,12 +4790,12 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.zip_tie.3"
+        "slug": "quadro.zip_tie.3"
       }
     ]
   },
   {
-    "slug": "droneaid.30",
+    "slug": "quadrocopter.30",
     "symbols": [
       {
         "slug": "step"
@@ -2954,19 +4815,19 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.battery_pad.0"
+            "literal": "top.battery_pad.0"
           },
           {
             "active": true,
-            "literal": "drone.antenna_vtx.0"
+            "literal": "quadro.antenna_vtx.0"
           },
           {
             "active": true,
-            "literal": "drone.zip_tie.4"
+            "literal": "quadro.zip_tie.4"
           },
           {
             "active": true,
-            "literal": "drone.sticker_id.0"
+            "literal": "top.sticker_id.0"
           }
         ]
       },
@@ -3021,21 +4882,21 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.antenna_vtx.0"
+        "slug": "quadro.antenna_vtx.0"
       },
       {
-        "slug": "drone.battery_pad.0"
+        "slug": "quadro.zip_tie.4"
       },
       {
-        "slug": "drone.sticker_id.0"
+        "slug": "top.battery_pad.0"
       },
       {
-        "slug": "drone.zip_tie.4"
+        "slug": "top.sticker_id.0"
       }
     ]
   },
   {
-    "slug": "droneaid.31",
+    "slug": "quadrocopter.31",
     "symbols": [
       {
         "slug": "step"
@@ -3048,10 +4909,7 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.tight"
-            ],
+            "kind": "TIGHT",
             "text": "Do not overtighten."
           }
         ]
@@ -3102,7 +4960,7 @@ export default [
     ]
   },
   {
-    "slug": "droneaid.32",
+    "slug": "quadrocopter.32",
     "symbols": [
       {
         "slug": "step"
@@ -3160,7 +5018,7 @@ export default [
     ]
   },
   {
-    "slug": "droneaid.33",
+    "slug": "quadrocopter.33",
     "symbols": [
       {
         "slug": "step"
@@ -3170,17 +5028,11 @@ export default [
       "ANNOTATED": {
         "notes": [
           {
-            "symbols": [
-              "note.warning",
-              "warn.magnet"
-            ],
+            "kind": "MAGNET",
             "text": "Never fit propellers with a battery connected."
           },
           {
-            "symbols": [
-              "note.warning",
-              "warn.orientation"
-            ],
+            "kind": "ORIENTATION",
             "text": "Mind the rotation direction of each propeller."
           }
         ]
@@ -3189,19 +5041,19 @@ export default [
         "placements": [
           {
             "active": true,
-            "literal": "drone.propeller.0"
+            "literal": "drive.propeller.0"
           },
           {
             "active": true,
-            "literal": "drone.propeller.1"
+            "literal": "drive.propeller.1"
           },
           {
             "active": true,
-            "literal": "drone.propeller.2"
+            "literal": "drive.propeller.2"
           },
           {
             "active": true,
-            "literal": "drone.propeller.3"
+            "literal": "drive.propeller.3"
           }
         ]
       },
@@ -3245,17 +5097,317 @@ export default [
     ],
     "uses": [
       {
-        "slug": "drone.propeller.0"
+        "slug": "drive.propeller.0"
       },
       {
-        "slug": "drone.propeller.1"
+        "slug": "drive.propeller.1"
       },
       {
-        "slug": "drone.propeller.2"
+        "slug": "drive.propeller.2"
       },
       {
-        "slug": "drone.propeller.3"
+        "slug": "drive.propeller.3"
       }
+    ]
+  },
+  {
+    "slug": "soldering.01",
+    "symbols": [
+      {
+        "slug": "step"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "WARNING",
+            "text": "Wash your hands after soldering. Don’t touch your face while working."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": []
+      },
+      "INSTRUCTED": {
+        "images": [],
+        "lines": [
+          {
+            "text": "Keep your hands away from your face while you work."
+          },
+          {
+            "text": "Wash your hands when you are done."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Before you solder.",
+        "name": "Safety"
+      },
+      "STAGED": {
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ]
+  },
+  {
+    "slug": "soldering.02",
+    "symbols": [
+      {
+        "slug": "step"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "TIP",
+            "text": "If you never soldered before, you can also train with cables and training boards."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": []
+      },
+      "INSTRUCTED": {
+        "images": [],
+        "lines": [
+          {
+            "text": "Train on spare cables and a training board before you solder the drone's boards."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Before you solder.",
+        "name": "Practice first"
+      },
+      "STAGED": {
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ]
+  },
+  {
+    "slug": "soldering.03",
+    "symbols": [
+      {
+        "slug": "step"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "WIRES",
+            "text": "All wires are soldered according to the correct pinout."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": []
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/6d8443726d85.webp"
+        ],
+        "lines": [
+          {
+            "text": "Yellow wire to RX."
+          },
+          {
+            "text": "White wire to TX."
+          },
+          {
+            "text": "Red wire to 5V."
+          },
+          {
+            "text": "Black wire to ground (−)."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Pinouts.",
+        "name": "Receiver (ELRS)"
+      },
+      "STAGED": {
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ]
+  },
+  {
+    "slug": "soldering.04",
+    "symbols": [
+      {
+        "slug": "step"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "WIRES",
+            "text": "All wires are soldered according to the correct pinout."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": []
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/6d8443726d85.webp"
+        ],
+        "lines": [
+          {
+            "text": "Red wire to 5V."
+          },
+          {
+            "text": "Brown wire to GD."
+          },
+          {
+            "text": "Yellow wire to S7."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Pinouts.",
+        "name": "Servo to the flight controller"
+      },
+      "STAGED": {
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ]
+  },
+  {
+    "slug": "soldering.05",
+    "symbols": [
+      {
+        "slug": "step"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": [
+          {
+            "kind": "WIRES",
+            "text": "All wires are soldered according to the correct pinout."
+          }
+        ]
+      },
+      "ASSEMBLED": {
+        "placements": []
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/6d8443726d85.webp"
+        ],
+        "lines": [
+          {
+            "text": "Red wire to VCC."
+          },
+          {
+            "text": "Black wire to GD."
+          },
+          {
+            "text": "Blue wire to T5."
+          },
+          {
+            "text": "Green wire to R5."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Pinouts.",
+        "name": "VTX to the flight controller"
+      },
+      "STAGED": {
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
+    ]
+  },
+  {
+    "slug": "soldering.06",
+    "symbols": [
+      {
+        "slug": "step"
+      }
+    ],
+    "trait": {
+      "ANNOTATED": {
+        "notes": []
+      },
+      "ASSEMBLED": {
+        "placements": []
+      },
+      "INSTRUCTED": {
+        "images": [
+          "manual/3e32c1fc316b.webp"
+        ],
+        "lines": [
+          {
+            "text": "All solder pads are fully covered with solder, including the power pads on the underside of the ESC."
+          },
+          {
+            "text": "The exposed part of the wire is completely embedded in the solder joint and does not stick out."
+          },
+          {
+            "text": "The solder forms a shiny, smooth, rounded drop."
+          },
+          {
+            "text": "The soldering looks neat and is mechanically strong."
+          },
+          {
+            "text": "All wires are soldered according to the correct pinout."
+          }
+        ]
+      },
+      "LABELED": {
+        "description": "Signs of good soldering.",
+        "name": "Check every joint"
+      },
+      "STAGED": {
+        "ghost": true
+      }
+    },
+    "traits": [
+      "LABELED",
+      "ASSEMBLED",
+      "INSTRUCTED",
+      "ANNOTATED",
+      "STAGED"
     ]
   }
 ];

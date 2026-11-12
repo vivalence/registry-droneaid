@@ -2,7 +2,8 @@ import { Datasink } from "@vivalence/typology";
 import * as blend from "./blend.js";
 import { families } from "./vocabulary.js";
 import { parts, placements } from "./rows.js";
-import { standing } from "./glb.js";
+import { measured, seated, standing } from "./glb.js";
+import * as interceptor from "./interceptor.js";
 
 const HERE = new URL("..", import.meta.url).pathname;
 
@@ -25,10 +26,22 @@ const geometry = async (seat) => {
   console.log(`freight/parts: ${blend.parts.length} copied from ${seat}; standoff.glb ${standoff.tris} tris ${standoff.size.map((n) => n.toFixed(5)).join(" × ")}`);
 };
 
+const prints = async (from) => {
+  for (const part of interceptor.printed) {
+    const stem = part.stl.replace(/^.*\/|\.stl$/g, "");
+    const piece = await seated(await Deno.readFile(`${from}/${stem}/${stem}.glb`), part.slug);
+    await Deno.writeFile(`${HERE}freight/parts/${part.slug}.glb`, piece.bytes);
+    console.log(`freight/parts/${part.slug}.glb ${piece.tris} tris ${piece.size.map((n) => n.toFixed(5)).join(" × ")}`);
+  }
+};
+
 if (import.meta.main) {
+  const print = Deno.args.indexOf("--print");
+  if (print >= 0) await prints(Deno.args[print + 1]);
+  const sizes = await measured(`${HERE}freight`, interceptor.printed.map((part) => part.slug));
   await write("dataset/symbols/families.js", families);
-  await write("dataset/literals/parts.js", parts());
-  await write("dataset/literals/placements.js", placements());
+  await write("dataset/literals/parts.js", [...parts(), ...interceptor.parts(sizes)]);
+  await write("dataset/literals/placements.js", [...placements(), ...interceptor.placements(sizes)]);
   const seat = Deno.args.indexOf("--seat");
   if (seat >= 0) await geometry(Deno.args[seat + 1]);
 }
