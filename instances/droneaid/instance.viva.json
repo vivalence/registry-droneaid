@@ -24,10 +24,10 @@
         "@assembly/topology/guide",
         "@droneaid/topography/models",
         "@droneaid/topography/guides",
-        "@assembly/editor/import",
-        "@assembly/editor/assembly",
-        "@assembly/editor/guide",
-        "@assembly/player/guide",
+        "@assembly/model/import",
+        "@assembly/model/editor",
+        "@assembly/guide/editor",
+        "@assembly/guide/player",
         "@commons/dashboard/dataspace"
       ]
     }

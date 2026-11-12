@@ -9,7 +9,7 @@ It carries one instance — the `droneaid` daemon — whose kernel is the assemb
 the vocabulary), this package's two topographies — `topographies/models`, the drone: its parts, the
 kit and every placement of the build; `topographies/guides`, the manual: one guide, 33 steps in 8
 sections, the manual's pages on the freight — the importer that reads a blend file into rows
-(`@assembly/editor/import`), and `@assembly`'s editors and player over them.
+(`@assembly/model/import`), and `@assembly`'s editors and player over them.
 
 The rows live on disk, in this package, as each topography's `dataset/`. The daemon installs them
 at boot (DATASET) and writes every change back to the same files (DATASINK), so an edit in the
@@ -49,7 +49,7 @@ the chat. One is enough, and a key left blank leaves its provider dormant:
     SECRET_VIVA_ANTHROPIC_API_KEY=      # optional
     SECRET_VIVA_OPENROUTER_API_KEY=     # optional
 
-The importer mounts `<instance>/mountpoint/daemon_droneaid/mode_editor_import/`: drop a `.blend` there.
+The importer mounts `<instance>/mountpoint/daemon_droneaid/mode_model_import/`: drop a `.blend` there.
 
 ### 3 — run it
 
@@ -81,7 +81,7 @@ The rows were first written by each topography's `harvest/` — pure data module
 placements as the importer read them, the kit, the measured anchors, the 33 steps) and a
 `harvest.js` that writes `dataset/` in the drain's own canonical form, so the next drain is a no-op:
 
-    deno run -A --config <checkout>/deno.jsonc topographies/models/harvest/harvest.js --seat <mountpoint>/daemon_droneaid/mode_editor_import/parts
+    deno run -A --config <checkout>/deno.jsonc topographies/models/harvest/harvest.js --seat <mountpoint>/daemon_droneaid/mode_model_import/parts
     deno run -A --config <checkout>/deno.jsonc topographies/guides/harvest/harvest.js
 
 `--seat` also copies the importer's GLBs to `freight/parts/` and cuts one standoff out of the
